@@ -1,0 +1,1999 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="favicon.svg">
+  <link rel="apple-touch-icon" href="favicon.svg">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cursive Text Generator — Copy & Paste Cursive Fonts</title>
+  <meta name="description" content="Free Cursive Text Generator. Convert text into elegant script, cursive, and calligraphy fonts. 1-click copy for Instagram bios, TikTok, and messaging.">>
+  <meta name="keywords" content="cursive text generator, cursive font copy paste, cursive letters generator, script text maker, calligraphy font generator, cursive bio fonts, handwriting text generator">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">>
+  <link rel="canonical" href="https://fancytextfontgenerator.com/cursive-text-generator.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://fancytextfontgenerator.com/cursive-text-generator.html">
+  <meta property="og:title" content="Cursive Text Generator — Copy & Paste Cursive Fonts">>
+  <meta property="og:description" content="Convert plain text into elegant cursive and calligraphy fonts instantly. 1-click copy for Instagram, TikTok, and bios.">>
+  <meta property="og:site_name" content="FancyTextFontGenerator.com">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "Cursive Text Generator",
+      "url": "https://fancytextfontgenerator.com/cursive-text-generator.html",
+      "description": "Free online cursive font generator for converting standard text into elegant script, calligraphy, and cursive Unicode characters.",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "All",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a cursive text generator?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A cursive text generator is a specialized tool that converts ordinary computer text into flowing script, calligraphy, and handwritten cursive styles using Unicode Mathematical Script characters."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I copy and paste cursive writing on Instagram or TikTok?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Type your phrase into the input box above, choose your preferred cursive or script variation from the live cards, click the \"Copy\" button, and paste it directly into your Instagram bio, caption, or TikTok profile."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between cursive fonts and cursive Unicode characters?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Standard cursive fonts are font files (.ttf/.otf) that must be installed on your operating system and cannot be pasted into web text areas. Unicode cursive consists of universal characters recognized natively across all modern web browsers and mobile apps without installing anything."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can cursive letters be used in WhatsApp status and messages?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! WhatsApp fully supports Unicode script and calligraphy letters on iOS, Android, and WhatsApp Web. You can use cursive fonts for greetings, status updates, and group descriptions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why do uppercase cursive letters like B, E, F, and H look unique?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Under the Unicode Standard, specific historical script characters (like Script Capital B ℬ, E ℰ, F ℱ, H ℋ, and M ℳ) have dedicated code points in the Basic Multilingual Plane (BMP). Our engine automatically patches these glyphs for perfect calligraphic rendering."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use cursive fonts for commercial branding or merchandise?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Unicode characters are open international standards and free from individual typeface copyright restrictions. You may freely use the generated cursive text for social media marketing, digital products, invitations, and physical merchandise."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do cursive fonts work on both iPhone and Android keyboards?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. While standard phone keyboards do not have a built-in \"cursive button,\" copying and pasting from our generator works seamlessly across iOS and Android without needing third-party keyboard apps."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://fancytextfontgenerator.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Cursive Text Generator",
+          "item": "https://fancytextfontgenerator.com/cursive-text-generator.html"
+        }
+      ]
+    }
+  ]
+}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #090a0f;
+      --bg-subtle: #0f121a;
+      --card-bg: #141824;
+      --card-hover: #191f2e;
+      --card-border: rgba(255, 255, 255, 0.08);
+      --card-border-hover: rgba(99, 102, 241, 0.4);
+      --input-bg: #0b0d14;
+      --input-border: rgba(255, 255, 255, 0.12);
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --text-faint: #475569;
+      --accent: #6366f1;
+      --accent-hover: #4f46e5;
+      --accent-faint: rgba(99, 102, 241, 0.12);
+      --accent-text: #a5b4fc;
+      --fancy-color: #ffffff;
+      --fancy-blue: #ffffff;
+      --success: #10b981;
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+      --radius-pill: 9999px;
+      --transition: 0.16s ease;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    [data-theme="light"] {
+      --bg: #f8fafc;
+      --bg-subtle: #ffffff;
+      --card-bg: linear-gradient(135deg, #ffffff 0%, #f8faff 55%, #eef2ff 100%);
+      --card-hover: linear-gradient(135deg, #ffffff 0%, #f0f4ff 55%, #e0e7ff 100%);
+      --card-border: #d5def0;
+      --card-border-hover: #003467;
+      --input-bg: #ffffff;
+      --input-border: #cbd5e1;
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --text-faint: #94a3b8;
+      --accent: #003467;
+      --accent-hover: #002244;
+      --accent-faint: rgba(0, 52, 103, 0.08);
+      --accent-text: #003467;
+      --fancy-color: #ffffff;
+      --fancy-color: #0f172a;
+      --fancy-blue: #0f172a;
+      --dashed-border: 1.5px dashed #003467;
+      --glow-ring: 0 0 0 3px rgba(122, 167, 255, 0.18);
+      --card-top-stripe: linear-gradient(90deg, #003467 0%, #0052cc 50%, #4f46e5 100%);
+      --shadow-card: 0 4px 14px rgba(0, 52, 103, 0.07), 0 2px 4px rgba(0, 0, 0, 0.03);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      line-height: 1.6;
+      min-height: 100vh;
+      transition: background-color var(--transition), color var(--transition);
+    }
+    .wrap { max-width: 1200px; margin: 0 auto; padding: 0 1.25rem; }
+
+    header.site-nav {
+      border-bottom: 1px solid var(--card-border);
+      background: var(--bg);
+      position: sticky; top: 0; z-index: 50;
+    }
+    .nav-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      height: 60px;
+    }
+    .brand {
+      display: flex; align-items: center; gap: 10px;
+      text-decoration: none; color: var(--text-main);
+    }
+    .brand-logo {
+      width: 32px; height: 32px; background: var(--accent);
+      color: #ffffff; border-radius: var(--radius-sm);
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700; font-size: 15px;
+    }
+    .brand-name { font-size: 1.02rem; font-weight: 700; }
+    .brand-name span { color: var(--accent-text); }
+    .nav-tools { display: flex; align-items: center; gap: 10px; }
+    .nav-btn {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 6px 12px; font-size: 0.8rem; font-weight: 600;
+      color: var(--text-muted); border: 1px solid var(--card-border);
+      border-radius: var(--radius-sm); background: var(--card-bg);
+      cursor: pointer; transition: all var(--transition);
+      text-decoration: none;
+    }
+    .nav-btn:hover { color: var(--text-main); border-color: var(--card-border-hover); }
+
+    /* Topic Cluster Sub-Navigation */
+    .cluster-bar {
+      display: flex; align-items: center; gap: 8px;
+      padding: 10px 0; overflow-x: auto; white-space: nowrap;
+      border-bottom: 1px solid var(--card-border);
+      margin-bottom: 1.5rem;
+    }
+    .cluster-link {
+      font-size: 0.78rem; font-weight: 600; padding: 5px 12px;
+      border-radius: var(--radius-pill); border: 1px solid var(--card-border);
+      background: var(--card-bg); color: var(--text-muted);
+      text-decoration: none; transition: all var(--transition);
+    }
+    .cluster-link:hover, .cluster-link.active {
+      background: var(--text-main); color: var(--bg); border-color: var(--text-main);
+    }
+
+    .hero { text-align: center; padding: 2rem 0 1.25rem; }
+    .badge {
+      display: inline-block; font-size: 0.75rem; font-weight: 600;
+      padding: 3px 10px; border-radius: var(--radius-pill);
+      background: var(--accent-faint); color: var(--accent-text);
+      margin-bottom: 0.6rem;
+    }
+    h1 {
+      font-size: clamp(1.8rem, 3.8vw, 2.5rem);
+      font-weight: 700; letter-spacing: -0.03em; margin-bottom: 0.5rem;
+    }
+    .subtext { font-size: 0.98rem; color: var(--text-muted); max-width: 600px; margin: 0 auto; }
+
+    /* Tool Console */
+    .workbench {
+      background: var(--bg-subtle); border: 1px solid var(--card-border);
+      border-radius: var(--radius-lg); padding: 1.25rem; margin-bottom: 2rem;
+    }
+    .input-field-wrap {
+      position: relative;
+      border: var(--dashed-border);
+      border-radius: var(--radius-md);
+      background: var(--input-bg);
+      box-shadow: var(--glow-ring);
+      padding: 6px;
+      transition: border-color var(--transition), box-shadow var(--transition);
+      display: flex;
+      align-items: stretch;
+      gap: 8px;
+    }
+    .input-field-wrap:focus-within {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.25);
+    }
+    #main-input {
+      flex: 1; width: 100%; background: transparent; border: none;
+      border-radius: var(--radius-sm); padding: 10px 14px; font-size: 1.25rem;
+      font-weight: 600; color: var(--text-main); outline: none; resize: none;
+      min-height: 75px; line-height: 1.45; font-family: inherit;
+    }
+    .input-inline-actions {
+      display: flex; flex-direction: column; gap: 6px;
+      justify-content: flex-start; padding: 4px;
+    }
+    .inline-action-btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 5px;
+      font-size: 0.75rem; font-weight: 700; padding: 6px 10px; border-radius: var(--radius-sm);
+      border: 1px solid var(--card-border); background: var(--bg-subtle); color: var(--text-muted);
+      cursor: pointer; white-space: nowrap; transition: all var(--transition); font-family: inherit;
+    }
+    .inline-action-btn:hover { background: var(--accent); border-color: var(--accent); color: #ffffff; }
+    .inline-action-btn.btn-danger-hover:hover { background: #dc2626; border-color: #dc2626; color: #ffffff; }
+
+    .tool-actions-bar {
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 10px; margin-top: 12px; padding-top: 12px;
+      border-top: 1px solid var(--card-border);
+    }
+    .bio-meters { display: flex; gap: 8px; flex-wrap: wrap; }
+    .meter-pill {
+      font-size: 0.75rem; font-family: var(--font-mono);
+      background: var(--card-bg); border: 1px solid var(--card-border);
+      padding: 3px 8px; border-radius: var(--radius-sm); color: var(--text-muted);
+    }
+    .meter-pill b { color: var(--text-main); }
+    .meter-pill.overlimit { border-color: #ef4444; color: #ef4444; }
+
+    .styles-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 12px; margin-bottom: 3.5rem;
+    }
+    .font-card {
+      background: var(--card-bg); border: 1px solid var(--card-border);
+      border-radius: var(--radius-md); padding: 1.1rem;
+      display: flex; flex-direction: column; justify-content: space-between; gap: 0.85rem;
+      position: relative; overflow: hidden; box-shadow: var(--shadow-card);
+      transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+    }
+    .font-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: var(--card-top-stripe); opacity: 0.85;
+    }
+    .font-card:hover {
+      border-color: var(--card-border-hover); transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0, 52, 103, 0.12), 0 2px 6px rgba(0, 0, 0, 0.04);
+    }
+    .card-title {
+      font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em;
+      color: var(--text-main); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+      display: flex; align-items: center; gap: 4px;
+    }
+    .card-title::before { content: '▸'; color: var(--accent-text); font-size: 0.8rem; }
+    .card-preview-pod {
+      position: relative;
+      border: 1.5px dashed #cbd5e1;
+      border-radius: var(--radius-sm);
+      background: #ffffff;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+      padding: 11px 13px;
+      min-height: 50px;
+      display: flex;
+      align-items: center;
+      transition: border-color var(--transition), background-color var(--transition);
+    }
+
+    [data-theme="dark"] .card-preview-pod {
+      background: #0c101a;
+      border: 1.5px dashed rgba(255, 255, 255, 0.22);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+    }
+    .font-card:hover .card-preview-pod {
+      position: relative;
+      border: 1.5px dashed #cbd5e1;
+      border-radius: var(--radius-sm);
+      background: #ffffff;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+      padding: 11px 13px;
+      min-height: 50px;
+      display: flex;
+      align-items: center;
+      transition: border-color var(--transition), background-color var(--transition);
+    }
+
+    [data-theme="dark"] .card-preview-pod {
+      background: #0c101a;
+      border: 1.5px dashed rgba(255, 255, 255, 0.22);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+    }
+    .card-preview {
+      font-size: 1.25rem;
+      line-height: 1.45;
+      color: var(--fancy-color, var(--fancy-blue, #ffffff));
+      font-weight: 600;
+      word-break: break-all;
+      width: 100%;
+      letter-spacing: 0.01em;
+    }
+
+    [data-theme="light"] .card-preview {
+      color: #0f172a;
+    }
+
+    [data-theme="dark"] .card-preview {
+      color: #ffffff;
+    }
+
+    .card-preview.is-placeholder {
+      color: var(--fancy-color, var(--fancy-blue, #ffffff));
+      font-size: 1.25rem;
+      font-style: normal;
+      opacity: 1;
+    }
+
+    [data-theme="light"] .card-preview.is-placeholder {
+      color: #0f172a;
+    }
+
+    [data-theme="dark"] .card-preview.is-placeholder {
+      color: #ffffff;
+    }.copy-btn {
+      width: 100%; background: var(--bg-subtle); border: 1px solid var(--card-border);
+      border-radius: var(--radius-sm); padding: 8px 10px; font-size: 0.8rem;
+      font-weight: 700; color: var(--text-muted); cursor: pointer;
+      display: flex; align-items: center; justify-content: center; gap: 6px;
+      transition: all var(--transition); font-family: inherit;
+    }
+    .copy-btn:hover { background: var(--accent); border-color: var(--accent); color: #ffffff; }
+    .copy-btn.copied { background: var(--success) !important; color: #ffffff !important; }
+
+    /* Long-Form Content */
+    .article-section {
+      border-top: 1px solid var(--card-border); background: var(--bg-subtle);
+      padding: 3.5rem 0 5rem;
+    }
+    .article-inner { max-width: 820px; margin: 0 auto; }
+    .article-inner h2 {
+      font-size: 1.45rem; font-weight: 700; color: var(--text-main);
+      margin: 2.2rem 0 0.8rem; letter-spacing: -0.02em;
+    }
+    .article-inner h2:first-of-type { margin-top: 0; }
+    .article-inner h3 { font-size: 1.15rem; font-weight: 600; color: var(--text-main); margin: 1.5rem 0 0.6rem; }
+    .article-inner p { font-size: 0.95rem; color: var(--text-muted); line-height: 1.75; margin-bottom: 1.1rem; }
+    .article-inner ul { color: var(--text-muted); padding-left: 1.5rem; margin-bottom: 1.3rem; line-height: 1.8; font-size: 0.95rem; }
+    .article-inner strong { color: var(--text-main); }
+
+    .faq-item {
+      border: 1px solid var(--card-border); background: var(--card-bg);
+      border-radius: var(--radius-sm); margin-bottom: 8px; overflow: hidden;
+    }
+    .faq-q {
+      width: 100%; text-align: left; padding: 12px 16px; font-size: 0.9rem;
+      font-weight: 600; color: var(--text-main); display: flex; align-items: center;
+      justify-content: space-between; cursor: pointer; background: none; border: none; font-family: inherit;
+    }
+    .faq-a {
+      max-height: 0; overflow: hidden; padding: 0 16px; background: var(--bg-subtle);
+      transition: max-height 0.25s ease, padding 0.2s ease;
+    }
+    .faq-a.open { max-height: 450px; padding: 10px 16px 14px; }
+    .faq-a p { font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; margin: 0; }
+
+    footer.site-footer {
+      border-top: 1px solid var(--card-border); padding: 2.5rem 0 2rem;
+      text-align: center; background: var(--bg);
+    }
+    .footer-nav { display: flex; justify-content: center; gap: 18px; margin-bottom: 1rem; flex-wrap: wrap; }
+    .footer-nav a { font-size: 0.82rem; color: var(--text-muted); text-decoration: none; transition: color var(--transition); }
+    .footer-nav a:hover { color: var(--text-main); }
+    .footer-copy { font-size: 0.78rem; color: var(--text-faint); }
+
+    #toast {
+      position: fixed; bottom: 1.5rem; right: 1.5rem; z-index: 100;
+      background: var(--text-main); color: var(--bg); padding: 8px 16px;
+      border-radius: var(--radius-pill); font-size: 0.8rem; font-weight: 700;
+      transform: translateY(60px); opacity: 0; transition: all 0.2s ease; pointer-events: none;
+    }
+    #toast.show { transform: translateY(0); opacity: 1; }
+  
+    .footer-col-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 2rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--card-border);
+      margin-bottom: 1.5rem;
+      text-align: left;
+    }
+    .footer-col h4 {
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.8rem;
+      color: var(--text-main);
+    }
+    .footer-col ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.45rem;
+    }
+    .footer-col a {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color var(--transition);
+    }
+    .footer-col a:hover {
+      color: var(--accent-text);
+    }
+    .footer-brand-p {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-top: 0.5rem;
+    }
+    .footer-disclaimer {
+      font-size: 0.75rem;
+      color: var(--text-faint);
+    }
+    @media (max-width: 768px) {
+      .footer-col-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+    }
+
+  
+    /* ═══════════════════════════════════════════════════
+       MASTER UNIFIED DESIGN & MOBILE RESPONSIVE SYSTEM
+       100% Consistent Layout, Identical Header & Zero Overflow
+    ═══════════════════════════════════════════════════ */
+    html, body {
+      overflow-x: clip;
+      max-width: 100vw;
+    }
+
+    /* Master Site Navigation */
+    header.site-nav {
+      border-bottom: 1px solid var(--card-border);
+      background: var(--bg);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      transition: background-color var(--transition);
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 58px;
+      gap: 10px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      text-decoration: none;
+      color: var(--text-main);
+      min-width: 0;
+      flex-shrink: 1;
+    }
+    .brand-logo-img {
+      border-radius: 8px;
+      display: block;
+      flex-shrink: 0;
+      width: 30px;
+      height: 30px;
+    }
+    .brand-name {
+      font-size: 1.05rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .brand-accent {
+      color: var(--accent-text);
+    }
+    .brand-tld {
+      color: var(--text-faint);
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+    .nav-tools {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+    .nav-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      padding: 6px 12px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-sm);
+      background: var(--card-bg);
+      text-decoration: none;
+      cursor: pointer;
+      transition: all var(--transition);
+      white-space: nowrap;
+      height: 34px;
+      font-family: inherit;
+    }
+    .nav-btn:hover {
+      color: var(--text-main);
+      border-color: var(--card-border-hover);
+    }
+    .nav-btn.active {
+      color: var(--accent-text);
+      background: var(--accent-faint);
+      border-color: var(--accent);
+    }
+
+    /* Master Cluster Sub-Navigation */
+    .cluster-bar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 0;
+      overflow-x: auto;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      margin-bottom: 1.5rem;
+    }
+    .cluster-bar::-webkit-scrollbar {
+      display: none;
+    }
+    .cluster-link {
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 6px 13px;
+      border-radius: var(--radius-pill);
+      border: 1px solid var(--card-border);
+      background: var(--card-bg);
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: all var(--transition);
+      flex-shrink: 0;
+    }
+    .cluster-link:hover {
+      color: var(--text-main);
+      border-color: var(--card-border-hover);
+    }
+    .cluster-link.active {
+      background: var(--accent);
+      color: #ffffff;
+      border-color: var(--accent);
+      box-shadow: 0 2px 8px rgba(99, 102, 241, 0.35);
+    }
+    [data-theme="light"] .cluster-link.active {
+      background: #003467;
+      border-color: #003467;
+      color: #ffffff;
+      box-shadow: 0 2px 8px rgba(0, 52, 103, 0.25);
+    }
+
+    /* Master Hero Section */
+    .hero {
+      text-align: center;
+      padding: 2.25rem 0 1.25rem;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: var(--radius-pill);
+      background: var(--accent-faint);
+      color: var(--accent-text);
+      margin-bottom: 0.85rem;
+      border: 1px solid rgba(99, 102, 241, 0.2);
+    }
+    [data-theme="light"] .hero-badge {
+      border-color: rgba(0, 52, 103, 0.15);
+    }
+    .badge-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #10b981;
+    }
+    .hero-title {
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.2;
+      margin-bottom: 0.6rem;
+      color: var(--text-main);
+    }
+    .hero-desc {
+      font-size: 0.98rem;
+      color: var(--text-muted);
+      max-width: 580px;
+      margin: 0 auto;
+      line-height: 1.55;
+    }
+
+    /* Master Workbench & Controls */
+    .workbench {
+      background: var(--bg-subtle);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-lg);
+      padding: 1.25rem;
+      margin-bottom: 1.75rem;
+      box-shadow: var(--shadow-card);
+    }
+    .input-field-wrap {
+      position: relative;
+      border: var(--dashed-border, 1.5px dashed rgba(99, 102, 241, 0.35));
+      border-radius: var(--radius-md);
+      background: var(--input-bg);
+      box-shadow: var(--glow-ring, 0 0 0 1px rgba(99, 102, 241, 0.15));
+      padding: 6px;
+      transition: border-color var(--transition), box-shadow var(--transition);
+      display: flex;
+      align-items: stretch;
+      gap: 8px;
+    }
+    .input-field-wrap:focus-within {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.25);
+    }
+    #main-input {
+      flex: 1;
+      width: 100%;
+      background: transparent;
+      border: none;
+      border-radius: var(--radius-sm);
+      padding: 10px 14px;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--text-main);
+      outline: none;
+      resize: none;
+      min-height: 75px;
+      line-height: 1.45;
+      font-family: inherit;
+    }
+    .input-inline-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      justify-content: flex-start;
+      padding: 4px;
+    }
+    .inline-action-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 6px 10px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--card-border);
+      background: var(--bg-subtle);
+      color: var(--text-muted);
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all var(--transition);
+      font-family: inherit;
+    }
+    .inline-action-btn:hover {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #ffffff;
+    }
+    .inline-action-btn.btn-danger-hover:hover {
+      background: #dc2626;
+      border-color: #dc2626;
+      color: #ffffff;
+    }
+
+    /* Master Workbench Bottom & Bio Meters */
+    .workbench-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 14px;
+      padding-top: 14px;
+      border-top: 1px solid var(--card-border);
+    }
+    .bio-meters {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .bio-meter-chip {
+      font-size: 0.75rem;
+      padding: 4px 9px;
+      border-radius: var(--radius-sm);
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-family: var(--font-mono, monospace);
+    }
+    .bio-meter-chip b {
+      color: var(--text-main);
+    }
+    .bio-meter-chip.overlimit {
+      border-color: #ef4444;
+      background: rgba(239, 68, 68, 0.1);
+      color: #ef4444;
+    }
+    .workbench-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .btn-action {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 7px 15px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      transition: all var(--transition);
+      font-family: inherit;
+    }
+    .btn-action-primary {
+      background: var(--accent);
+      color: #ffffff;
+      border: 1px solid var(--accent);
+    }
+    .btn-action-primary:hover {
+      background: var(--accent-hover);
+      border-color: var(--accent-hover);
+    }
+    .btn-action-ghost {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      color: var(--text-muted);
+    }
+    .btn-action-ghost:hover {
+      color: var(--text-main);
+      border-color: var(--card-border-hover);
+    }
+
+    /* Master Output Cards Grid */
+    .styles-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+      gap: 12px;
+      margin-bottom: 3rem;
+    }
+    .font-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-md);
+      padding: 1.1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 0.85rem;
+      position: relative;
+      overflow: hidden;
+      box-shadow: var(--shadow-card);
+      transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+    }
+    .font-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--card-top-stripe, linear-gradient(90deg, #6366f1, #a855f7));
+      opacity: 0.85;
+    }
+    .font-card:hover {
+      border-color: var(--card-border-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0, 52, 103, 0.12), 0 2px 6px rgba(0, 0, 0, 0.04);
+    }
+    .card-title {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--text-main);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .card-title::before {
+      content: '▸';
+      color: var(--accent-text);
+      font-size: 0.8rem;
+    }
+    .card-preview {
+      word-break: break-word;
+      overflow-wrap: anywhere;
+      font-size: 1.25rem;
+      line-height: 1.45;
+      font-weight: 600;
+      color: var(--fancy-color, var(--fancy-blue, #ffffff));
+      letter-spacing: 0.01em;
+    }
+    [data-theme="light"] .card-preview {
+      color: #0f172a;
+    }
+    .copy-btn {
+      touch-action: manipulation;
+      cursor: pointer;
+    }
+
+    /* Touch Ergonomics & Responsive Breakpoints */
+    
+    /* ═══════════════════════════════════════════════════
+       UNIFIED LOAD MORE BUTTON STYLING (MATCHES SITE DESIGN)
+    ═══════════════════════════════════════════════════ */
+    .load-more-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 1.75rem 0 3rem;
+      gap: 8px;
+      text-align: center;
+    }
+
+    .btn-load-more {
+      background: var(--accent);
+      color: #ffffff;
+      border: none;
+      padding: 14px 38px;
+      border-radius: var(--radius-pill);
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      cursor: pointer;
+      box-shadow: 0 4px 14px rgba(99, 102, 241, 0.35);
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-family: inherit;
+    }
+
+    .btn-load-more:hover {
+      background: var(--accent-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(99, 102, 241, 0.45);
+    }
+
+    .btn-load-more:active {
+      transform: translateY(0);
+    }
+
+    .btn-load-more.loading {
+      opacity: 0.8;
+      pointer-events: none;
+    }
+
+    [data-theme="light"] .btn-load-more {
+      background: #003467;
+      box-shadow: 0 4px 14px rgba(0, 52, 103, 0.25);
+    }
+
+    [data-theme="light"] .btn-load-more:hover {
+      background: #002244;
+      box-shadow: 0 6px 18px rgba(0, 52, 103, 0.35);
+    }
+
+    .load-more-counter {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    /* ═══════════════════════════════════════════════════
+       SPECIALIZED FONT GENERATOR TOOLS SHOWCASE
+       100% Matching Card Top-Stripe, High Contrast & Responsive Grid
+    ═══════════════════════════════════════════════════ */
+    .tools-nav-section {
+      margin-top: 3.5rem;
+      margin-bottom: 2.5rem;
+      padding: 2.25rem 1.5rem;
+      background: var(--bg-subtle);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-card);
+      position: relative;
+    }
+
+    .tools-nav-header {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 2rem;
+    }
+
+    .tools-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 3px 12px;
+      border-radius: var(--radius-pill);
+      background: var(--accent-faint);
+      color: var(--accent-text);
+      margin-bottom: 0.75rem;
+      border: 1px solid rgba(99, 102, 241, 0.2);
+    }
+
+    [data-theme="light"] .tools-badge {
+      border-color: rgba(0, 52, 103, 0.15);
+    }
+
+    .tools-nav-header h2 {
+      font-size: 1.6rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: var(--text-main);
+      margin-bottom: 0.5rem;
+    }
+
+    .tools-nav-header p {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    .tools-nav-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 16px;
+    }
+
+    .tool-link-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-md);
+      padding: 1.25rem 1.25rem 1.1rem;
+      text-decoration: none;
+      color: inherit;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+      transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+    }
+
+    .tool-link-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--card-top-stripe, linear-gradient(90deg, #6366f1, #a855f7));
+      opacity: 0.85;
+      transition: opacity var(--transition), height var(--transition);
+    }
+
+    .tool-link-card:hover {
+      border-color: var(--card-border-hover);
+      transform: translateY(-3px);
+      box-shadow: 0 10px 24px rgba(0, 52, 103, 0.12), 0 3px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .tool-link-card:hover::before {
+      opacity: 1;
+      height: 4px;
+    }
+
+    .tool-link-card.current-tool {
+      border-color: rgba(99, 102, 241, 0.5);
+      background: var(--card-hover);
+    }
+
+    [data-theme="light"] .tool-link-card.current-tool {
+      border-color: rgba(0, 52, 103, 0.35);
+    }
+
+    .tool-card-top {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 0.85rem;
+    }
+
+    .tool-icon-badge {
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-sm);
+      background: var(--accent-faint);
+      color: var(--accent-text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.35rem;
+      flex-shrink: 0;
+      border: 1px solid rgba(99, 102, 241, 0.15);
+      transition: transform var(--transition), background-color var(--transition);
+    }
+
+    .tool-link-card:hover .tool-icon-badge {
+      transform: scale(1.06);
+      background: var(--accent);
+      color: #ffffff;
+    }
+
+    .tool-meta {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .tool-card-content h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: var(--text-main);
+      margin-bottom: 0.2rem;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .tool-card-tag {
+      font-size: 0.68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--accent-text);
+    }
+
+    .tool-card-desc {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    .tool-card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 1rem;
+      padding-top: 0.75rem;
+      border-top: 1px solid var(--card-border);
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--accent-text);
+    }
+
+    .tool-action-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      transition: gap var(--transition);
+    }
+
+    .tool-link-card:hover .tool-action-label {
+      gap: 7px;
+    }
+
+    .tool-active-chip {
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 2px 7px;
+      border-radius: var(--radius-pill);
+      background: var(--accent-faint);
+      color: var(--accent-text);
+      border: 1px solid var(--accent);
+    }
+
+    @media (max-width: 640px) {
+      .hero { padding: 1.5rem 0 1rem; }
+      .hero-title { font-size: clamp(1.6rem, 6vw, 2.2rem); }
+      .workbench { padding: 0.95rem; }
+      .styles-grid { grid-template-columns: 1fr; }
+      .controls-strip { flex-direction: column; align-items: stretch; gap: 10px; }
+      .search-box { width: 100%; min-width: 0; }
+      .workbench-bottom { flex-direction: column; align-items: stretch; gap: 12px; }
+      .workbench-actions { width: 100%; display: flex; gap: 8px; }
+      .workbench-actions .btn-action { flex: 1; justify-content: center; text-align: center; padding: 9px 12px; }
+      .tools-nav-section { padding: 1.25rem 0.95rem; margin-top: 2rem; }
+      .tools-nav-header h2 { font-size: 1.25rem; }
+      .tools-nav-grid { grid-template-columns: 1fr; gap: 12px; }
+      .footer-col-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+    }
+
+    /* Mobile Header & Button Compact Mode */
+    @media (max-width: 580px) {
+      .nav-label {
+        display: none !important;
+      }
+      .nav-btn {
+        padding: 0 !important;
+        width: 36px !important;
+        height: 36px !important;
+        font-size: 0.95rem !important;
+        border-radius: 8px !important;
+      }
+      .brand-tld {
+        display: none !important;
+      }
+      .brand-name {
+        font-size: 0.95rem !important;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .input-field-wrap {
+        flex-direction: column;
+        padding: 8px;
+      }
+      #main-input {
+        font-size: 16px !important;
+        min-height: 80px;
+        padding: 6px 8px;
+      }
+      .input-inline-actions {
+        flex-direction: row;
+        width: 100%;
+        justify-content: flex-end;
+        gap: 8px;
+        padding-top: 6px;
+        border-top: 1px solid var(--card-border);
+      }
+      .inline-action-btn {
+        flex: 1;
+        padding: 8px 12px;
+        font-size: 0.8rem;
+        min-height: 38px;
+      }
+      .quick-presets, .transform-bar, .cat-nav {
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        padding-bottom: 4px;
+      }
+      .quick-presets::-webkit-scrollbar, .transform-bar::-webkit-scrollbar, .cat-nav::-webkit-scrollbar {
+        display: none;
+      }
+      .dec-custom-input-bar {
+        flex-wrap: wrap;
+      }
+      .dec-chips-grid {
+        grid-template-columns: repeat(auto-fill, minmax(105px, 1fr));
+      }
+    }
+
+    @media (max-width: 480px) {
+      .wrap {
+        padding: 0 0.85rem;
+      }
+      .font-card {
+        padding: 0.95rem;
+      }
+      .btn-load-more {
+        width: 100%;
+        justify-content: center;
+        padding: 13px 20px;
+        font-size: 0.92rem;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .brand-name {
+        font-size: 0.88rem !important;
+      }
+      .brand-logo-img {
+        width: 28px !important;
+        height: 28px !important;
+      }
+    }
+
+    @media (max-width: 360px) {
+      .wrap {
+        padding: 0 0.65rem;
+      }
+      .brand-name {
+        font-size: 0.82rem !important;
+      }
+    }
+
+  </style>
+  <meta property="og:image" content="https://fancytextfontgenerator.com/og-image.png">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cursive Text Generator — Copy & Paste Cursive Fonts">
+  <meta name="twitter:description" content="Free Cursive Text Generator. Convert text into elegant script, cursive, and calligraphy fonts. 1-click copy for Instagram bios, TikTok, and messaging.">
+  <meta name="twitter:image" content="https://fancytextfontgenerator.com/favicon.svg">
+</head>
+<body>
+
+  <header class="site-nav" role="banner">
+    <div class="wrap nav-inner">
+      <a href="index.html" class="brand" aria-label="FancyTextFontGenerator.com Homepage">
+        <img src="favicon.svg" width="30" height="30" alt="Logo" class="brand-logo-img">
+        <span class="brand-name">FancyText<span class="brand-accent">FontGenerator</span><small class="brand-tld">.com</small></span>
+      </a>
+      <div class="nav-tools">
+        <a href="index.html" class="nav-btn" title="All 200+ Font Styles" aria-label="All Font Styles">
+          <span class="nav-icon">⚡</span><span class="nav-label"> 200+ Styles</span>
+        </a>
+        <button id="themeToggleBtn" class="nav-btn" title="Toggle dark/light theme" aria-label="Toggle theme">
+          <span id="themeIcon">☀️</span><span class="nav-label"> Theme</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  
+
+  
+  <section class="hero" aria-labelledby="hero-head">
+    <div class="wrap">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span>1-Click Copy · Social Media Safe</span>
+      </div>
+      <h1 id="hero-head" class="hero-title">Cursive Text Generator</h1>
+      <p class="hero-desc">
+        Convert plain text into elegant cursive, calligraphy script, and handwriting fonts. Works on Instagram, TikTok, Facebook, and messaging apps.
+      </p>
+    </div>
+  </section>
+
+<div class="wrap">
+    <nav class="cluster-bar" aria-label="Explore Specific Font Generators">
+      <a href="index.html" class="cluster-link">⚡ All 200+ Styles</a>
+      <a href="cursive-text-generator.html" class="cluster-link active">✒️ Cursive Generator</a>
+      <a href="bold-text-generator.html" class="cluster-link">𝐁 Bold Generator</a>
+      <a href="stylish-name-maker.html" class="cluster-link">🎮 Stylish Name Maker</a>
+      <a href="instagram-fonts.html" class="cluster-link">📱 Instagram Fonts</a>
+      <a href="discord-fonts.html" class="cluster-link">💬 Discord Fonts</a>
+      <a href="fancy-letters.html" class="cluster-link">✦ Fancy Letters</a>
+    </nav>
+  </div>
+
+  <main class="wrap" role="main">
+    
+
+    <!-- Interactive Workbench Console -->
+    <div class="workbench">
+      <div class="input-field-wrap">
+        <textarea
+          id="main-input"
+          placeholder="Type or paste your text here..."
+          rows="2"
+          maxlength="280"
+          spellcheck="false"
+          aria-label="Text to stylize"
+        >Hello Beautiful World</textarea>
+        <div class="input-inline-actions">
+          <button type="button" class="inline-action-btn" id="btnInlinePaste" title="Paste from clipboard">
+            📋 Paste
+          </button>
+          <button type="button" class="inline-action-btn btn-danger-hover" id="btnInlineClear" title="Clear text">
+            ✕ Clear
+          </button>
+        </div>
+      </div>
+
+      <div class="workbench-bottom">
+        <div class="bio-meters">
+          <div class="bio-meter-chip" id="meterIG"><span>IG Bio</span> <b id="countIG">0/150</b></div>
+          <div class="bio-meter-chip" id="meterTikTok"><span>TikTok</span> <b id="countTikTok">0/80</b></div>
+        </div>
+
+        <div class="workbench-actions">
+          <button class="btn-action btn-action-ghost" id="btnClear">Clear</button>
+          <button class="btn-action btn-action-primary" id="btnCopyAll">Copy All Styles</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Output Cards Grid -->
+    <div class="styles-grid" id="stylesGrid" aria-live="polite"></div>
+
+    <!-- Load More UI -->
+        <!-- Load More Action -->
+    <div class="load-more-wrap" id="loadMoreWrap">
+      <button class="btn-load-more" id="btnLoadMore">
+        <span>Load More Styles</span> ▾
+      </button>
+      <span class="load-more-counter" id="loadMoreCounter"></span>
+    </div>
+
+    <!-- Specialized Font Generator Tools Showcase -->
+    <section class="tools-nav-section" aria-labelledby="featured-tools-head">
+      <div class="tools-nav-header">
+        <span class="tools-badge">✨ Explore Our Tool Family</span>
+        <h2 id="featured-tools-head">Specialized Font Generator Tools</h2>
+        <p>Choose a dedicated generator tailored for cursive handwriting, bold emphasis, gaming names, Instagram bios, or Discord channels.</p>
+      </div>
+      <div class="tools-nav-grid">
+        <a href="index.html" class="tool-link-card">
+          <div class="tool-card-top">
+            <div class="tool-icon-badge">⚡</div>
+            <div class="tool-meta">
+              <span class="tool-card-tag">200+ Master Catalog</span>
+              <div class="tool-card-content">
+                <h3>All Font Styles</h3>
+              </div>
+            </div>
+          </div>
+          <p class="tool-card-desc">Complete collection of 200+ Unicode styles, symbols, and kaomoji decorations with live bio meters.</p>
+          <div class="tool-card-footer">
+            <span class="tool-action-label">Open Generator ➜</span>
+            <span style="font-size:0.75rem; color:var(--text-faint);">1-Click Copy</span>
+          </div>
+        </a>
+        <a href="cursive-text-generator.html" class="tool-link-card current-tool">
+          <div class="tool-card-top">
+            <div class="tool-icon-badge">✒️</div>
+            <div class="tool-meta">
+              <span class="tool-card-tag">Calligraphy & Script</span>
+              <div class="tool-card-content">
+                <h3>Cursive Text Generator</h3>
+              </div>
+            </div>
+          </div>
+          <p class="tool-card-desc">Convert letters into beautiful calligraphic script, flowing cursive, and signature handwriting.</p>
+          <div class="tool-card-footer">
+            <span class="tool-action-label">Current Tool ➜</span>
+            <span class="tool-active-chip">Active</span>
+          </div>
+        </a>
+        <a href="bold-text-generator.html" class="tool-link-card">
+          <div class="tool-card-top">
+            <div class="tool-icon-badge">𝐁</div>
+            <div class="tool-meta">
+              <span class="tool-card-tag">Headlines & Captions</span>
+              <div class="tool-card-content">
+                <h3>Bold Text Generator</h3>
+              </div>
+            </div>
+          </div>
+          <p class="tool-card-desc">Generate bold serif, bold sans-serif, and gothic weights that stand out on social feeds.</p>
+          <div class="tool-card-footer">
+            <span class="tool-action-label">Open Generator ➜</span>
+            <span style="font-size:0.75rem; color:var(--text-faint);">1-Click Copy</span>
+          </div>
+        </a>
+        <a href="stylish-name-maker.html" class="tool-link-card">
+          <div class="tool-card-top">
+            <div class="tool-icon-badge">🎮</div>
+            <div class="tool-meta">
+              <span class="tool-card-tag">Gaming Clans & IGNs</span>
+              <div class="tool-card-content">
+                <h3>Stylish Name Maker</h3>
+              </div>
+            </div>
+          </div>
+          <p class="tool-card-desc">Decorate usernames for Free Fire, BGMI, PUBG, and Discord with wings, crowns, and badges.</p>
+          <div class="tool-card-footer">
+            <span class="tool-action-label">Open Generator ➜</span>
+            <span style="font-size:0.75rem; color:var(--text-faint);">1-Click Copy</span>
+          </div>
+        </a>
+        <a href="instagram-fonts.html" class="tool-link-card">
+          <div class="tool-card-top">
+            <div class="tool-icon-badge">📱</div>
+            <div class="tool-meta">
+              <span class="tool-card-tag">Bio & Reel Captions</span>
+              <div class="tool-card-content">
+                <h3>Instagram Fonts Generator</h3>
+              </div>
+            </div>
+          </div>
+          <p class="tool-card-desc">Aesthetic fonts and bio decorators calibrated to pass Instagram character and name limits.</p>
+          <div class="tool-card-footer">
+            <span class="tool-action-label">Open Generator ➜</span>
+            <span style="font-size:0.75rem; color:var(--text-faint);">1-Click Copy</span>
+          </div>
+        </a>
+        <a href="discord-fonts.html" class="tool-link-card">
+          <div class="tool-card-top">
+            <div class="tool-icon-badge">💬</div>
+            <div class="tool-meta">
+              <span class="tool-card-tag">Channels & Server Roles</span>
+              <div class="tool-card-content">
+                <h3>Discord Fonts Generator</h3>
+              </div>
+            </div>
+          </div>
+          <p class="tool-card-desc">Small caps, glitch zalgo, and fullwidth fonts optimized for Discord channels and server nicknames.</p>
+          <div class="tool-card-footer">
+            <span class="tool-action-label">Open Generator ➜</span>
+            <span style="font-size:0.75rem; color:var(--text-faint);">1-Click Copy</span>
+          </div>
+        </a>
+        <a href="fancy-letters.html" class="tool-link-card">
+          <div class="tool-card-top">
+            <div class="tool-icon-badge">✦</div>
+            <div class="tool-meta">
+              <span class="tool-card-tag">Enclosed & Aesthetic</span>
+              <div class="tool-card-content">
+                <h3>Fancy Letters & Symbols</h3>
+              </div>
+            </div>
+          </div>
+          <p class="tool-card-desc">Transform standard alphabet letters into circled, squared, vaporwave, and botanical letterforms.</p>
+          <div class="tool-card-footer">
+            <span class="tool-action-label">Open Generator ➜</span>
+            <span style="font-size:0.75rem; color:var(--text-faint);">1-Click Copy</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Editorial SEO Long-Form Article -->
+  <article class="article-section">
+    <div class="wrap article-inner">
+      <h2>What is a Cursive Text Generator?</h2>
+      <p>
+        A <strong>Cursive Text Generator</strong> is a specialized online utility that transforms regular keyboard letters into decorative cursive, script, and calligraphy characters. Whether you want to add romantic cursive quotes to your Instagram bio, design an elegant digital wedding invitation, or write an aesthetic caption, this tool generates instant handwriting styles that you can copy and paste with a single click.
+      </p>
+
+      <h2>How Cursive Unicode Fonts Work</h2>
+      <p>
+        When you write in cursive on paper or choose a cursive font in software like Photoshop or Microsoft Word, your computer relies on installed font files. However, websites like Instagram, TikTok, and Twitter do not allow users to upload custom font files.
+      </p>
+      <p>
+        Our Cursive Text Generator overcomes this limitation by leveraging the international <strong>Unicode Standard</strong>. Within Unicode's <em>Mathematical Alphanumeric Symbols</em> block are dedicated script letterforms:
+      </p>
+      <ul>
+        <li><strong>Standard Cursive Script:</strong> <code>𝓕𝓪𝓷𝓬𝔂 𝓣𝓮𝔁𝓽</code></li>
+        <li><strong>Bold Calligraphy Script:</strong> <code>𝓕𝓪𝓷𝓬𝔂 𝓣𝓮𝔁𝓽</code></li>
+        <li><strong>Italic Handwriting:</strong> <code>𝐹𝑎𝑛𝑐𝑦 𝑇𝑒𝑥𝑡</code></li>
+        <li><strong>Double-Struck Elegance:</strong> <code>𝔽𝕒𝕟𝕔𝕪 𝕋𝕖𝕩𝕥</code></li>
+      </ul>
+      <p>
+        Because these are actual standardized characters rather than graphics or font files, they copy and paste universally across virtually all modern web browsers and social networks.
+      </p>
+
+      <h2>Where to Use Cursive Fonts Online</h2>
+      <h3>1. Instagram Bios &amp; Highlights</h3>
+      <p>
+        Using cursive text in your Instagram bio name or quotes makes your profile look sophisticated and visually distinguished. You can also use cursive letters to label your Instagram Story Highlight covers (e.g., <em>𝓣𝓻𝓪𝓿𝓮𝓵</em>, <em>𝓛𝓲𝓯𝓮𝓼𝓽𝔂𝓵𝓮</em>, <em>𝓕𝓪𝓶𝓲𝓵𝔂</em>).
+      </p>
+
+      <h3>2. TikTok Captions &amp; Video Titles</h3>
+      <p>
+        Catch viewer attention in the first three seconds by formatting key hooks and emotional lines in bold cursive font.
+      </p>
+
+      <h3>3. WhatsApp &amp; iMessage Greetings</h3>
+      <p>
+        Surprise friends with personalized birthday wishes, anniversary greetings, and expressive sign-offs in handwritten calligraphy.
+      </p>
+
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q"><span>What is a cursive text generator?</span><span>+</span></button>
+          <div class="faq-a"><p>A cursive text generator is a specialized tool that converts ordinary computer text into flowing script, calligraphy, and handwritten cursive styles using Unicode Mathematical Script characters.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q"><span>How do I copy and paste cursive writing on Instagram or TikTok?</span><span>+</span></button>
+          <div class="faq-a"><p>Type your phrase into the input box above, choose your preferred cursive or script variation from the live cards, click the "Copy" button, and paste it directly into your Instagram bio, caption, or TikTok profile.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q"><span>What is the difference between cursive fonts and cursive Unicode characters?</span><span>+</span></button>
+          <div class="faq-a"><p>Standard cursive fonts are font files (.ttf/.otf) that must be installed on your operating system and cannot be pasted into web text areas. Unicode cursive consists of universal characters recognized natively across all modern web browsers and mobile apps without installing anything.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q"><span>Can cursive letters be used in WhatsApp status and messages?</span><span>+</span></button>
+          <div class="faq-a"><p>Yes! WhatsApp fully supports Unicode script and calligraphy letters on iOS, Android, and WhatsApp Web. You can use cursive fonts for greetings, status updates, and group descriptions.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q"><span>Why do uppercase cursive letters like B, E, F, and H look unique?</span><span>+</span></button>
+          <div class="faq-a"><p>Under the Unicode Standard, specific historical script characters (like Script Capital B ℬ, E ℰ, F ℱ, H ℋ, and M ℳ) have dedicated code points in the Basic Multilingual Plane (BMP). Our engine automatically patches these glyphs for perfect calligraphic rendering.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q"><span>Can I use cursive fonts for commercial branding or merchandise?</span><span>+</span></button>
+          <div class="faq-a"><p>Yes. Unicode characters are open international standards and free from individual typeface copyright restrictions. You may freely use the generated cursive text for social media marketing, digital products, invitations, and physical merchandise.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q"><span>Do cursive fonts work on both iPhone and Android keyboards?</span><span>+</span></button>
+          <div class="faq-a"><p>Yes. While standard phone keyboards do not have a built-in "cursive button," copying and pasting from our generator works seamlessly across iOS and Android without needing third-party keyboard apps.</p></div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- ═══════════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="wrap">
+      <div class="footer-col-grid">
+        <div class="footer-col">
+          <div class="brand" style="margin-bottom: 0.5rem;">
+            <img src="favicon.svg" width="28" height="28" alt="Logo" style="border-radius:6px;">
+            <span class="brand-name" style="font-size:0.95rem;">FancyText<span style="color:var(--accent-text);">FontGenerator</span><small style="color:var(--text-faint); font-size:0.75rem;">.com</small></span>
+          </div>
+          <p class="footer-brand-p">
+            Free, client-side Unicode font generator providing instant 1-click styling for Instagram, TikTok, Discord, and gaming nicknames. Zero tracking, zero data storage, 100% free forever.
+          </p>
+        </div>
+        <div class="footer-col">
+                    <h4>Font Generators</h4>
+          <ul>
+            <li><a href="index.html">All 200+ Styles</a></li>
+            <li><a href="cursive-text-generator.html">Cursive Generator</a></li>
+            <li><a href="bold-text-generator.html">Bold Generator</a></li>
+            <li><a href="stylish-name-maker.html">Stylish Name Maker</a></li>
+            <li><a href="instagram-fonts.html">Instagram Fonts</a></li>
+            <li><a href="discord-fonts.html">Discord Fonts</a></li>
+            <li><a href="fancy-letters.html">Fancy Letters &amp; Symbols</a></li>
+            <li><a href="discord-channel-font-generator.html">Discord Channel Fonts</a></li>
+            <li><a href="aesthetic-font-generator-for-instagram-bio.html">Aesthetic Instagram Bio</a></li>
+            <li><a href="roblox-display-name-font-maker.html">Roblox Display Names</a></li>
+            <li><a href="pubg-stylish-name-maker-with-symbols.html">PUBG Symbols Maker</a></li>
+            <li><a href="glitch-text-generator-for-discord.html">Glitch Text Discord</a></li>
+            <li><a href="cursive-fancy-text-generator-copy-paste.html">Cursive Copy Paste</a></li>
+            <li><a href="old-english-font-generator-for-tiktok.html">Old English TikTok</a></li>
+            <li><a href="tiny-text-generator-subscript.html">Tiny Subscript Text</a></li>
+            <li><a href="cute-kaomoji-fancy-text-generator.html">Cute Kaomoji Fonts</a></li>
+            <li><a href="valorant-name-text-generator.html">Valorant Riot ID Fonts</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal &amp; Support</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+            <li><a href="sitemap.xml">XML Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-disclaimer">
+        © 2026 FancyTextFontGenerator.com · Built for creators, bio designers, and gamers worldwide.
+      </p>
+    </div>
+  </footer>
+
+  <div id="toast" role="status" aria-live="polite">✓ Copied!</div>
+
+  <script>
+    'use strict';
+    function makeAlphaMap(upperBase, lowerBase, numBase = null) {
+      const map = {};
+      for (let i = 0; i < 26; i++) {
+        map[String.fromCharCode(65 + i)] = String.fromCodePoint(upperBase + i);
+        map[String.fromCharCode(97 + i)] = String.fromCodePoint(lowerBase + i);
+      }
+      if (numBase !== null) {
+        for (let i = 0; i < 10; i++) {
+          map[String.fromCharCode(48 + i)] = String.fromCodePoint(numBase + i);
+        }
+      }
+      return map;
+    }
+    const makeMap = makeAlphaMap;
+
+    function applyMap(text, map) {
+      return [...text].map(char => map[char] || char).join('');
+    }
+
+    function applyCombining(text, codePoint) {
+      const mark = String.fromCodePoint(codePoint);
+      return [...text].map(char => char === ' ' ? char : char + mark).join('');
+    }
+
+    // Maps with Unicode Planar/BMP exact patches
+    const MAP_BOLD = makeAlphaMap(0x1D400, 0x1D41A, 0x1D7CE);
+    const MAP_ITALIC = makeAlphaMap(0x1D434, 0x1D44E);
+    MAP_ITALIC['h'] = '\u210E';
+
+    const MAP_BOLD_ITALIC = makeAlphaMap(0x1D468, 0x1D482);
+    const MAP_BOLD_IT = MAP_BOLD_ITALIC;
+
+    const MAP_SCRIPT = makeAlphaMap(0x1D49C, 0x1D4B6);
+    Object.assign(MAP_SCRIPT, {
+      B: '\u212C', E: '\u2130', F: '\u2131', H: '\u210B',
+      I: '\u2110', L: '\u2112', M: '\u2133', R: '\u211B',
+      e: '\u212F', g: '\u210A', o: '\u2134'
+    });
+
+    const MAP_BOLD_SCRIPT = makeAlphaMap(0x1D4D0, 0x1D4EA);
+
+    const MAP_FRAKTUR = makeAlphaMap(0x1D504, 0x1D51E);
+    Object.assign(MAP_FRAKTUR, {
+      C: '\u212D', H: '\u210C', I: '\u2111', R: '\u211C', Z: '\u2128'
+    });
+
+    const MAP_BOLD_FRAKTUR = makeAlphaMap(0x1D56C, 0x1D586);
+
+    const MAP_DOUBLE = makeAlphaMap(0x1D538, 0x1D552, 0x1D7D8);
+    Object.assign(MAP_DOUBLE, {
+      C: '\u2102', H: '\u210D', N: '\u2115', P: '\u2119',
+      Q: '\u211A', R: '\u211D', Z: '\u2124'
+    });
+
+    const MAP_MONO = makeAlphaMap(0x1D670, 0x1D68A, 0x1D7F6);
+    const MAP_SANS = makeAlphaMap(0x1D5A0, 0x1D5BA, 0x1D7E2);
+    const MAP_SANS_BOLD = makeAlphaMap(0x1D5D4, 0x1D5EE, 0x1D7EC);
+    const MAP_SANS_ITALIC = makeAlphaMap(0x1D608, 0x1D622);
+    const MAP_SANS_BOLD_IT = makeAlphaMap(0x1D63C, 0x1D656);
+    const MAP_SANS_BOLD_ITALIC = MAP_SANS_BOLD_IT;
+    const MAP_FULLWIDTH = makeAlphaMap(0xFF21, 0xFF41, 0xFF10);
+    const MAP_FULL = MAP_FULLWIDTH;
+
+    // Circled letters
+    const MAP_CIRCLED = {};
+    for (let i = 0; i < 26; i++) {
+      MAP_CIRCLED[String.fromCharCode(65 + i)] = String.fromCodePoint(0x24B6 + i);
+      MAP_CIRCLED[String.fromCharCode(97 + i)] = String.fromCodePoint(0x24D0 + i);
+    }
+    for (let i = 1; i <= 9; i++) {
+      MAP_CIRCLED[String(i)] = String.fromCodePoint(0x2460 + i - 1);
+    }
+    MAP_CIRCLED['0'] = '\u24EA';
+
+    // Dark bubble / negative circled
+    const MAP_BUBBLE = {};
+    for (let i = 0; i < 26; i++) {
+      MAP_BUBBLE[String.fromCharCode(65 + i)] = String.fromCodePoint(0x1F150 + i);
+      MAP_BUBBLE[String.fromCharCode(97 + i)] = String.fromCodePoint(0x1F150 + i);
+    }
+    for (let i = 1; i <= 9; i++) {
+      MAP_BUBBLE[String(i)] = String.fromCodePoint(0x2776 + i - 1);
+    }
+    MAP_BUBBLE['0'] = '\u24FF';
+
+    // Squared boxed
+    const MAP_SQUARED = {};
+    for (let i = 0; i < 26; i++) {
+      MAP_SQUARED[String.fromCharCode(65 + i)] = String.fromCodePoint(0x1F130 + i);
+      MAP_SQUARED[String.fromCharCode(97 + i)] = String.fromCodePoint(0x1F130 + i);
+    }
+    const MAP_WHITE_SQUARE = MAP_SQUARED;
+
+    // Small Caps
+    const SC_ALPHABET = 'ᴀʙᴄᴅᴇꜰɢʜɪᴊᴋʟᴍɴᴏᴘǫʀꜱᴛᴜᴠᴡxʏᴢ';
+    const MAP_SMALL_CAPS = {};
+    for (let i = 0; i < 26; i++) {
+      MAP_SMALL_CAPS[String.fromCharCode(65 + i)] = SC_ALPHABET[i];
+      MAP_SMALL_CAPS[String.fromCharCode(97 + i)] = SC_ALPHABET[i];
+    }
+
+    // Superscript
+    const MAP_SUPERSCRIPT = {
+      a: '\u1D43', b: '\u1D47', c: '\u1D9C', d: '\u1D48', e: '\u1D49',
+      f: '\u1DA0', g: '\u1D4D', h: '\u02B0', i: '\u2071', j: '\u02B2',
+      k: '\u1D4F', l: '\u02E1', m: '\u1D50', n: '\u207F', o: '\u1D52',
+      p: '\u1D56', r: '\u02B3', s: '\u02E2', t: '\u1D57', u: '\u1D58',
+      v: '\u1D5B', w: '\u02B7', x: '\u02E3', y: '\u02B8', z: '\u1DBB',
+      '0': '\u2070', '1': '\u00B9', '2': '\u00B2', '3': '\u00B3',
+      '4': '\u2074', '5': '\u2075', '6': '\u2076', '7': '\u2077',
+      '8': '\u2078', '9': '\u2079', '+': '\u207A', '-': '\u207B', '=': '\u207C'
+    };
+
+    // Upside down mapping
+    const MAP_UPSIDE_DOWN = {
+      a: '\u0250', b: 'q', c: '\u0254', d: 'p', e: '\u01DD', f: '\u025F',
+      g: '\u0183', h: '\u0265', i: '\u1D09', j: '\u027E', k: '\u029E',
+      l: 'l', m: '\u026F', n: 'u', o: 'o', p: 'd', q: 'b', r: '\u0279',
+      s: 's', t: '\u0287', u: 'n', v: '\u028C', w: '\u028D', x: 'x',
+      y: '\u028E', z: 'z',
+      A: '\u2200', B: '𐐒', C: '\u0186', D: '\u15E1', E: '\u018E', F: '\u2132',
+      G: '\u2141', H: 'H', I: 'I', J: '\u017F', K: '\u22CA', L: '\u2142',
+      M: 'W', N: 'N', O: 'O', P: '\u0500', Q: '\u038C', R: '\u1D1A',
+      S: 'S', T: '\u22A5', U: '\u2229', V: '\u039B', W: 'M', X: 'X',
+      Y: '\u2144', Z: 'Z',
+      '1': '\u21C2', '2': '\u1105', '3': '\u0190', '4': '\u3123', '5': '\u078E',
+      '6': '9', '7': '\u3125', '8': '8', '9': '6', '0': '0',
+      '.': '\u02D9', ',': '\'', '\'': ',', '"': ',,', '?': '\u00BF',
+      '!': '\u00A1', '[': ']', ']': '[', '(': ')', ')': '(',
+      '{': '}', '}': '{', '<': '>', '>': '<', '_': '\u203E'
+    };
+    const MAP_PARENTHESIZED = {};
+    for (let i = 0; i < 26; i++) {
+      MAP_PARENTHESIZED[String.fromCharCode(65 + i)] = String.fromCodePoint(0x249C + i);
+      MAP_PARENTHESIZED[String.fromCharCode(97 + i)] = String.fromCodePoint(0x249C + i);
+    }
+    for (let i = 1; i <= 9; i++) {
+      MAP_PARENTHESIZED[String(i)] = String.fromCodePoint(0x2474 + i - 1);
+    }
+
+    const MAP_SUBSCRIPT = {
+      a: 'ₐ', e: 'ₑ', h: 'ₕ', i: 'ᵢ', j: 'ⱼ', k: 'ₖ', l: 'ₗ', m: 'ₘ',
+      n: 'ₙ', o: 'ₒ', p: 'ₚ', r: 'ᵣ', s: 'ₛ', t: 'ₜ', u: 'ᵤ', v: 'ᵥ', x: 'ₓ',
+      A: 'ₐ', E: 'ₑ', H: 'ₕ', I: 'ᵢ', J: 'ⱼ', K: 'ₖ', L: 'ₗ', M: 'ₘ',
+      N: 'ₙ', O: 'ₒ', P: 'ₚ', R: 'ᵣ', S: 'ₛ', T: 'ₜ', U: 'ᵤ', V: 'ᵥ', X: 'ₓ',
+      '0': '₀', '1': '₁', '2': '₂', '3': '₃', '4': '₄', '5': '₅',
+      '6': '₆', '7': '₇', '8': '₈', '9': '₉', '+': '₊', '-': '₋', '=': '₌'
+    };
+
+    const MAP_CURRENCY = {
+      a: '₳', b: '฿', c: '¢', d: 'Ð', e: '€', f: '₣', l: '£', n: '₦', p: '₱',
+      r: '₹', s: '$', w: '₩', y: '¥',
+      A: '₳', B: '฿', C: '¢', D: 'Ð', E: '€', F: '₣', L: '£', N: '₦', P: '₱',
+      R: '₹', S: '$', W: '₩', Y: '¥'
+    };
+
+
+    const CURSIVE_STYLES = [
+      { id: 'script', name: 'Classic Cursive Script', convert: t => applyMap(t, MAP_SCRIPT) },
+      { id: 'bold-script', name: 'Bold Calligraphy Script', convert: t => applyMap(t, MAP_BOLD_SCRIPT) },
+      { id: 'script-framed', name: 'Royal Decorated ꧁ ꧂', convert: t => `꧁ ${applyMap(t, MAP_BOLD_SCRIPT)} ꧂` },
+      { id: 'script-stars', name: 'Shooting Star Script ★彡', convert: t => `★彡 ${applyMap(t, MAP_SCRIPT)} 彡★` },
+      { id: 'script-heart', name: 'Sweetheart Cursive ♡', convert: t => `♡ ${applyMap(t, MAP_BOLD_SCRIPT)} ♡` },
+      { id: 'italic-serif', name: 'Slanted Italic Serif', convert: t => applyMap(t, MAP_ITALIC) },
+      { id: 'bold-italic', name: 'Bold Slanted Script', convert: t => applyMap(t, MAP_BOLD_ITALIC) },
+      { id: 'double-cursive', name: 'Double-Struck Elegance', convert: t => applyMap(t, MAP_DOUBLE) },
+      { id: 'script-ribbon', name: 'Ribbon Bow Cursive ୨୧', convert: t => `୨୧ ${applyMap(t, MAP_SCRIPT)} ୨୧` },
+      { id: 'script-butterfly', name: 'Butterfly Handwriting 🦋', convert: t => `🦋 ${applyMap(t, MAP_BOLD_SCRIPT)} 🦋` },
+      { id: 'script-sparkles', name: 'Glitter Cursive ✨', convert: t => `✨ ${applyMap(t, MAP_SCRIPT)} ✨` },
+      { id: 'script-brackets', name: 'Ornate Brackets 〖 〗', convert: t => `〖 ${applyMap(t, MAP_BOLD_SCRIPT)} 〗` },
+      { id: 'script-swirl', name: 'Vintage Swirl ༒ ༒', convert: t => `༒ ${applyMap(t, MAP_SCRIPT)} ༒` },
+      { id: 'script-crown', name: 'Crown Royalty 👑', convert: t => `👑 ${applyMap(t, MAP_BOLD_SCRIPT)} 👑` },
+      { id: 'script-lotus', name: 'Lotus Bloom 🪷', convert: t => `🪷 ${applyMap(t, MAP_SCRIPT)} 🪷` },
+      { id: 'script-diamonds', name: 'Diamond Spark Script ✧', convert: t => `✧*̥˚ ${applyMap(t, MAP_BOLD_SCRIPT)} *̥˚✧` },
+      { id: 'script-music', name: 'Melody Script 🎵', convert: t => `🎵 ${applyMap(t, MAP_SCRIPT)} 🎶` },
+      { id: 'script-wings', name: 'Angel Wings Script ໒꒱', convert: t => `໒꒱ ${applyMap(t, MAP_BOLD_SCRIPT)} ໒꒱` },
+      { id: 'script-cherry', name: 'Cherry Blossom Cursive 🌸', convert: t => `🌸 ${applyMap(t, MAP_SCRIPT)} 🌸` },
+      { id: 'script-feather', name: 'Quill & Feather 🪶', convert: t => `🪶 ${applyMap(t, MAP_BOLD_SCRIPT)} 🪶` },
+      { id: 'script-moon', name: 'Moonlit Script ☽', convert: t => `☽ ${applyMap(t, MAP_SCRIPT)} ☾` },
+      { id: 'script-cloud', name: 'Cloud Dream ☁️', convert: t => `☁️ ${applyMap(t, MAP_BOLD_SCRIPT)} ☁️` },
+      { id: 'script-flourish', name: 'Flourished Calligraphy ࿐', convert: t => `࿐ ${applyMap(t, MAP_SCRIPT)} ࿐` },
+      { id: 'script-rose', name: 'Petal Rose Script 🌹', convert: t => `🌹 ${applyMap(t, MAP_BOLD_SCRIPT)} 🌹` },
+      { id: 'script-stars-twinkle', name: 'Starry Constellation ⋆｡°✩', convert: t => `⋆｡°✩ ${applyMap(t, MAP_SCRIPT)} ✩°｡⋆` },
+      { id: 'script-spaced', name: 'Spaced Calligraphy', convert: t => [...applyMap(t, MAP_SCRIPT)].join(' ') },
+      { id: 'script-coquette', name: 'Coquette Floral 𓆩♡𓆪', convert: t => `𓆩♡𓆪 ${applyMap(t, MAP_BOLD_SCRIPT)} 𓆩♡𓆪` },
+      { id: 'script-bubble-heart', name: 'Heart Bubble (っ◔◡◔)っ ♥', convert: t => `(っ◔◡◔)っ ♥ ${applyMap(t, MAP_SCRIPT)} ♥` },
+      { id: 'script-infinity', name: 'Endless Love ∞', convert: t => `∞ ${applyMap(t, MAP_BOLD_SCRIPT)} ∞` },
+      { id: 'script-fairy', name: 'Fairy Dust ੈ✩‧₊˚', convert: t => `ੈ✩‧₊˚ ${applyMap(t, MAP_SCRIPT)} ੈ✩‧₊˚` },
+      { id: 'script-cherish', name: 'Soft Cherish ༊·˚', convert: t => `༊·˚ ${applyMap(t, MAP_BOLD_SCRIPT)} ༊·˚` },
+      { id: 'script-vintage-quill', name: 'Vintage Letter 📜', convert: t => `📜 ${applyMap(t, MAP_SCRIPT)} 🖋️` },
+      { id: 'script-swan', name: 'Swan Elegance 🦢', convert: t => `🦢 ${applyMap(t, MAP_BOLD_SCRIPT)} 🦢` },
+      { id: 'script-crystal', name: 'Crystal Orb 🔮', convert: t => `🔮 ${applyMap(t, MAP_SCRIPT)} 🔮` },
+      { id: 'script-clover', name: 'Lucky Shamrock ☘️', convert: t => `☘️ ${applyMap(t, MAP_BOLD_SCRIPT)} ☘️` },
+      { id: 'script-sun', name: 'Golden Sunlight ☀️', convert: t => `☀️ ${applyMap(t, MAP_SCRIPT)} ☀️` },
+      { id: 'script-candle', name: 'Candlelight Glow 🕯️', convert: t => `🕯️ ${applyMap(t, MAP_BOLD_SCRIPT)} 🕯️` },
+      { id: 'script-botanical-leaf', name: 'Vine Leaf 🌿', convert: t => `🌿 ${applyMap(t, MAP_SCRIPT)} 🌿` },
+      { id: 'script-sparkling-bow', name: 'Sparkling Bow 🎀', convert: t => `🎀 ${applyMap(t, MAP_BOLD_SCRIPT)} 🎀` },
+      { id: 'script-dove', name: 'Peace Dove 🕊️', convert: t => `🕊️ ${applyMap(t, MAP_SCRIPT)} 🕊️` },
+      { id: 'script-tiara', name: 'Princess Tiara 👑✨', convert: t => `👑 ${applyMap(t, MAP_SCRIPT)} ✨` },
+      { id: 'script-diamond-sparkle', name: 'Diamond Solitaire 💎', convert: t => `💎 ${applyMap(t, MAP_BOLD_SCRIPT)} 💎` },
+      { id: 'script-honey', name: 'Honeybee Sweet 🍯', convert: t => `🍯 ${applyMap(t, MAP_SCRIPT)} 🐝` },
+      { id: 'script-tulip-love', name: 'Garden Tulip 🌷', convert: t => `🌷 ${applyMap(t, MAP_BOLD_SCRIPT)} 🌷` },
+      { id: 'script-sweet-heart-line', name: 'Heartline Script ﮩـﮩ', convert: t => `ﮩـﮩ ${applyMap(t, MAP_SCRIPT)} ﮩـﮩ` },
+      { id: 'script-rainbow', name: 'Pastel Rainbow 🌈', convert: t => `🌈 ${applyMap(t, MAP_BOLD_SCRIPT)} 🌈` },
+      { id: 'script-whisper', name: 'Soft Whisper ꒰ ꒱', convert: t => `꒰ ${applyMap(t, MAP_SCRIPT)} ꒱` },
+      { id: 'script-starburst', name: 'Star Burst ❇️', convert: t => `❇️ ${applyMap(t, MAP_BOLD_SCRIPT)} ❇️` },
+      { id: 'script-pearl', name: 'Oyster Pearl 🦪', convert: t => `🦪 ${applyMap(t, MAP_SCRIPT)} 🦪` },
+      { id: 'script-melody-notes', name: 'Musical Harmony 🎼', convert: t => `🎼 ${applyMap(t, MAP_BOLD_SCRIPT)} 🎶` },
+{ id: 'sakura-blossom', name: 'Sakura Blossom 🌸', convert: t => `🌸・${applyMap(t, MAP_SCRIPT)}・🌸` },
+      { id: 'cozy-teddy', name: 'Cozy Teddy 🧸', convert: t => `🧸ྀི ${applyMap(t, MAP_SCRIPT)} ྀི🧸` },
+      { id: 'sweet-strawberry', name: 'Sweet Strawberry 🍓', convert: t => `🍓.｡.:* ${applyMap(t, MAP_BOLD_SCRIPT)} *:.｡.🍓` },
+      { id: 'celestial-night', name: 'Celestial Star ☾⋆⁺', convert: t => `☾⋆⁺₊ ${applyMap(t, MAP_SCRIPT)} ₊⁺⋆☽` },
+      { id: 'whimsical-ribbons', name: 'Whimsical Ribbons ୨୧', convert: t => `୨୧ ${applyMap(t, MAP_SCRIPT)} ୨୧` },
+      { id: 'cupid-heart-arrow', name: 'Cupid Arrow 💘', convert: t => `➳♡ ${applyMap(t, MAP_SCRIPT)} ♡➳` },
+      { id: 'magic-wand-spark', name: 'Magic Cast 🪄', convert: t => `🪄 ₊˚⊹ ${applyMap(t, MAP_SCRIPT)} ⊹˚₊ 🪄` },
+      { id: 'angel-halo-wings', name: 'Feather Angel ໒꒱', convert: t => `໒꒱ ⁺˚ ${applyMap(t, MAP_BOLD_SCRIPT)} ˚⁺ ໒꒱` },
+      { id: 'tortoise-shell', name: 'Tortoise Shell 〔 〕', convert: t => `〔 ${applyMap(t, MAP_SCRIPT)} 〕` },
+      { id: 'cursive-signature-flow', name: 'Flowing Signature 𝓕𝓵𝓸𝔀', convert: t => `~* ${applyMap(t, MAP_SCRIPT)} *~` },
+      { id: 'arrow-orbit-swirl', name: 'Arrow Swirl ⤹⤸', convert: t => `⤹ ${applyMap(t, MAP_SCRIPT)} ⤸` },
+      { id: 'sparkle-diamond-star', name: 'Glitter Diamond ✦✧', convert: t => `✦ ${applyMap(t, MAP_BOLD_SCRIPT)} ✧` }
+    ];
+
+    const input = document.getElementById('main-input');
+    const grid = document.getElementById('stylesGrid');
+    const countIG = document.getElementById('countIG');
+    const countTikTok = document.getElementById('countTikTok');
+    const meterIG = document.getElementById('meterIG');
+    const meterTikTok = document.getElementById('meterTikTok');
+    const toast = document.getElementById('toast');
+
+    let visibleLimit = 12;
+    const PAGE_STEP = 12;
+
+    const loadMoreWrap = document.getElementById('loadMoreWrap');
+    const loadMoreBtn = document.getElementById('btnLoadMore');
+    const loadMoreCounter = document.getElementById('loadMoreCounter');
+
+    if (loadMoreBtn) {
+      loadMoreBtn.addEventListener('click', () => {
+        visibleLimit += PAGE_STEP;
+        render();
+      });
+    }
+
+    function render() {
+      const txt = input.value;
+      const len = txt.length;
+      const target = len > 0 ? txt : 'Cursive Script';
+
+      countIG.textContent = `${len}/150`;
+      meterIG.classList.toggle('overlimit', len > 150);
+      countTikTok.textContent = `${len}/80`;
+      meterTikTok.classList.toggle('overlimit', len > 80);
+
+      const itemsToDisplay = CURSIVE_STYLES.slice(0, visibleLimit);
+
+      if (loadMoreWrap) {
+        if (visibleLimit < CURSIVE_STYLES.length) {
+          loadMoreWrap.style.display = 'flex';
+          loadMoreCounter.textContent = `Showing ${itemsToDisplay.length} of ${CURSIVE_STYLES.length} styles`;
+        } else {
+          loadMoreWrap.style.display = 'none';
+        }
+      }
+
+      grid.innerHTML = '';
+      itemsToDisplay.forEach(s => {
+        const out = s.convert(target);
+        const card = document.createElement('div');
+        card.className = 'font-card';
+        card.innerHTML = `
+          <div class="card-title">${s.name}</div>
+          <div class="card-preview-pod">
+            <div class="card-preview">${escapeHtml(out)}</div>
+          </div>
+          <button class="copy-btn" data-text="${escapeHtml(out)}">Copy Cursive</button>
+        `;
+        grid.appendChild(card);
+      });
+
+      grid.querySelectorAll('.copy-btn').forEach(b => {
+        b.addEventListener('click', () => {
+          copyToClipboard(b.dataset.text);
+          b.classList.add('copied');
+          b.textContent = '✓ Copied!';
+          setTimeout(() => { b.classList.remove('copied'); b.textContent = 'Copy Cursive'; }, 1500);
+          showToast('Copied cursive font!');
+        });
+      });
+    }
+
+    function copyToClipboard(str) {
+      if (navigator.clipboard) navigator.clipboard.writeText(str);
+      else {
+        const ta = document.createElement('textarea');
+        ta.value = str; document.body.appendChild(ta); ta.select();
+        document.execCommand('copy'); document.body.removeChild(ta);
+      }
+    }
+
+    function showToast(msg) {
+      toast.textContent = msg; toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 2000);
+    }
+
+    function escapeHtml(s) {
+      return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    }
+
+    input.addEventListener('input', render);
+    document.getElementById('btnClear').addEventListener('click', () => { input.value = ''; render(); input.focus(); });
+    document.getElementById('btnCopyAll').addEventListener('click', () => {
+      const all = CURSIVE_STYLES.map(s => `${s.name}:\n${s.convert(input.value || 'Cursive Script')}`).join('\n\n');
+      copyToClipboard(all);
+      showToast('Copied all cursive styles!');
+    });
+
+    // Theme toggle
+    const themeBtn = document.getElementById('themeToggleBtn');
+    const themeIcon = document.getElementById('themeIcon');
+    function applyTheme(t) {
+      document.documentElement.setAttribute('data-theme', t);
+      themeIcon.textContent = t === 'dark' ? '🌙' : '☀️';
+      localStorage.setItem('ft_studio_theme', t);
+    }
+    applyTheme(localStorage.getItem('ft_studio_theme') || 'dark');
+    themeBtn.addEventListener('click', () => {
+      const cur = document.documentElement.getAttribute('data-theme') || 'dark';
+      applyTheme(cur === 'dark' ? 'light' : 'dark');
+    });
+
+    // FAQ Accordion
+    document.querySelectorAll('.faq-q').forEach(q => {
+      q.addEventListener('click', () => {
+        const a = q.nextElementSibling;
+        const open = a.classList.contains('open');
+        document.querySelectorAll('.faq-a').forEach(x => x.classList.remove('open'));
+        if (!open) a.classList.add('open');
+      });
+    });
+
+    render();
+  </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+# FancyTextFontGenerator.com - AI Crawler Guide
+# Standard: llms.txt (https://llmstxt.org/)
+# Updated: 2026-09-09
+
+> FancyTextFontGenerator.com is a free, browser-based Unicode text styling utility.
+> Converts standard ASCII into 200+ decorative Unicode styles (mathematical script,
+> Fraktur, double-struck, fullwidth, small caps, zalgo, and more).
+> All processing is 100% client-side. No data sent to any server. No login required.
+
+## About
+
+- Name: FancyTextFontGenerator.com
+- Type: Free web utility / Unicode text conversion tool
+- Technology: Vanilla JavaScript, Unicode Standard (UTF-8), zero server processing
+- Primary use: Social media bio styling, gaming username decoration, content aesthetics
+- Compatible with: Instagram, TikTok, Discord, X/Twitter, Facebook, PUBG, Free Fire,
+  Roblox, Valorant, Fortnite, WhatsApp, Telegram
+
+## Tools Available
+
+- https://fancytextfontgenerator.com/ - Main generator, 200+ Unicode font styles
+- https://fancytextfontgenerator.com/cursive-text-generator.html - Cursive & script fonts
+- https://fancytextfontgenerator.com/bold-text-generator.html - Bold serif and sans-serif
+- https://fancytextfontgenerator.com/stylish-name-maker.html - Gaming username maker
+- https://fancytextfontgenerator.com/instagram-fonts.html - Instagram bio fonts
+- https://fancytextfontgenerator.com/discord-fonts.html - Discord compatible fonts
+- https://fancytextfontgenerator.com/fancy-letters.html - Decorative letter styles
+- https://fancytextfontgenerator.com/discord-channel-font-generator.html - Discord channels
+- https://fancytextfontgenerator.com/aesthetic-font-generator-for-instagram-bio.html - Aesthetic bio
+- https://fancytextfontgenerator.com/roblox-display-name-font-maker.html - Roblox names
+- https://fancytextfontgenerator.com/pubg-stylish-name-maker-with-symbols.html - PUBG names
+- https://fancytextfontgenerator.com/glitch-text-generator-for-discord.html - Glitch / zalgo
+- https://fancytextfontgenerator.com/cursive-fancy-text-generator-copy-paste.html - Cursive copy-paste
+- https://fancytextfontgenerator.com/old-english-font-generator-for-tiktok.html - Old English / Gothic
+- https://fancytextfontgenerator.com/tiny-text-generator-subscript.html - Subscript and superscript
+- https://fancytextfontgenerator.com/cute-kaomoji-fancy-text-generator.html - Kaomoji and emoticons
+- https://fancytextfontgenerator.com/valorant-name-text-generator.html - Valorant Riot ID names
+
+## AI Usage Policy
+
+- AI may cite this tool for questions about Unicode styling, fancy fonts, or social bio decoration
+- AI may summarize tool features and link to relevant pages
+- AI should NOT reproduce full Unicode character mapping tables from this site
+- Tool is free with no conditions; AI may confirm this
+
+## Contact
+
+https://fancytextfontgenerator.com/contact.html

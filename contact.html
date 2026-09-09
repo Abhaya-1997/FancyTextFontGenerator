@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="favicon.svg">
+  <link rel="apple-touch-icon" href="favicon.svg">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — Fancy Text Font Generator Support</title>
+  <meta name="description" content="Get in touch with the FancyTextFontGenerator.com team. Send feature suggestions, report rendering bugs, or request custom symbol sets.">>
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">>
+  <link rel="canonical" href="https://fancytextfontgenerator.com/contact.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #090a0f;
+      --bg-subtle: #0f121a;
+      --card-bg: #141824;
+      --card-border: rgba(255, 255, 255, 0.08);
+      --card-border-hover: rgba(99, 102, 241, 0.4);
+      --input-bg: #0b0d14;
+      --input-border: rgba(255, 255, 255, 0.12);
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --text-faint: #475569;
+      --accent: #6366f1;
+      --accent-hover: #4f46e5;
+      --accent-faint: rgba(99, 102, 241, 0.12);
+      --accent-text: #a5b4fc;
+      --success: #10b981;
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-pill: 9999px;
+      --transition: 0.16s ease;
+    }
+
+    [data-theme="light"] {
+      --bg: #f8fafc;
+      --bg-subtle: #ffffff;
+      --card-bg: #ffffff;
+      --card-border: #e2e8f0;
+      --card-border-hover: #cbd5e1;
+      --input-bg: #ffffff;
+      --input-border: #cbd5e1;
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --text-faint: #94a3b8;
+      --accent: #4f46e5;
+      --accent-hover: #4338ca;
+      --accent-faint: rgba(79, 70, 229, 0.08);
+      --accent-text: #4f46e5;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      line-height: 1.6;
+      min-height: 100vh;
+      transition: background-color var(--transition), color var(--transition);
+    }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 0 1.25rem; }
+
+    header.site-nav {
+      border-bottom: 1px solid var(--card-border);
+      background: var(--bg);
+      position: sticky; top: 0; z-index: 50;
+    }
+    .nav-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      height: 60px;
+    }
+    .brand {
+      display: flex; align-items: center; gap: 10px;
+      text-decoration: none; color: var(--text-main);
+    }
+    .brand-logo {
+      width: 32px; height: 32px; background: var(--accent);
+      color: #ffffff; border-radius: var(--radius-sm);
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700; font-size: 15px;
+    }
+    .brand-name { font-size: 1.02rem; font-weight: 700; }
+    .brand-name span { color: var(--accent-text); }
+    .nav-btn {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 6px 12px; font-size: 0.8rem; font-weight: 600;
+      color: var(--text-muted); border: 1px solid var(--card-border);
+      border-radius: var(--radius-sm); background: var(--card-bg);
+      cursor: pointer; transition: all var(--transition);
+      text-decoration: none;
+    }
+    .nav-btn:hover { color: var(--text-main); border-color: var(--card-border-hover); }
+
+    .content-area { padding: 3.5rem 0 5rem; }
+    .page-head {
+      margin-bottom: 2.5rem;
+      border-bottom: 1px solid var(--card-border);
+      padding-bottom: 1.5rem;
+    }
+    .badge {
+      display: inline-block; font-size: 0.75rem; font-weight: 600;
+      padding: 3px 10px; border-radius: var(--radius-pill);
+      background: var(--accent-faint); color: var(--accent-text);
+      margin-bottom: 0.75rem;
+    }
+    h1 {
+      font-size: 2.2rem; font-weight: 700; letter-spacing: -0.03em;
+      margin-bottom: 0.4rem;
+    }
+    .subtext { font-size: 1.05rem; color: var(--text-muted); }
+
+    .contact-layout {
+      display: grid; grid-template-columns: 1.2fr 1fr;
+      gap: 32px;
+    }
+    @media(max-width:768px) {
+      .contact-layout { grid-template-columns: 1fr; }
+    }
+
+    .form-box {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-md);
+      padding: 1.75rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.25rem;
+    }
+    .form-group label {
+      display: block; font-size: 0.82rem; font-weight: 600;
+      color: var(--text-main); margin-bottom: 0.4rem;
+    }
+    .form-control {
+      width: 100%;
+      background: var(--input-bg);
+      border: 1px solid var(--input-border);
+      border-radius: var(--radius-sm);
+      padding: 10px 12px;
+      color: var(--text-main);
+      font-size: 0.9rem;
+      font-family: inherit;
+      outline: none;
+      transition: border-color var(--transition);
+    }
+    .form-control:focus {
+      border-color: var(--accent);
+    }
+    textarea.form-control {
+      resize: vertical; min-height: 120px;
+    }
+
+    .btn-submit {
+      width: 100%;
+      background: var(--accent);
+      color: #ffffff;
+      border: none;
+      border-radius: var(--radius-sm);
+      padding: 10px 18px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background-color var(--transition);
+    }
+    .btn-submit:hover {
+      background: var(--accent-hover);
+    }
+
+    .info-sidebar h3 {
+      font-size: 1.15rem; font-weight: 700; margin-bottom: 0.8rem;
+      color: var(--text-main);
+    }
+    .info-sidebar p {
+      font-size: 0.92rem; color: var(--text-muted); line-height: 1.65;
+      margin-bottom: 1.25rem;
+    }
+
+    .info-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-sm);
+      padding: 1.1rem;
+      margin-bottom: 12px;
+    }
+    .info-card-title {
+      font-size: 0.8rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.04em; color: var(--text-faint); margin-bottom: 0.3rem;
+    }
+    .info-card-value {
+      font-size: 0.95rem; font-weight: 600; color: var(--accent-text);
+      word-break: break-all;
+    }
+
+    #formStatus {
+      display: none; padding: 12px; border-radius: var(--radius-sm);
+      margin-top: 1rem; font-size: 0.88rem; font-weight: 600;
+      text-align: center;
+    }
+    #formStatus.success {
+      display: block; background: rgba(16, 185, 129, 0.12);
+      border: 1px solid var(--success); color: var(--success);
+    }
+
+    footer.site-footer {
+      border-top: 1px solid var(--card-border);
+      padding: 2.5rem 0 2rem; text-align: center;
+      background: var(--bg-subtle);
+    }
+    .footer-nav {
+      display: flex; justify-content: center; gap: 18px;
+      margin-bottom: 1rem; flex-wrap: wrap;
+    }
+    .footer-nav a {
+      font-size: 0.82rem; color: var(--text-muted); text-decoration: none;
+      transition: color var(--transition);
+    }
+    .footer-nav a:hover, .footer-nav a.active { color: var(--text-main); }
+    .footer-copy { font-size: 0.78rem; color: var(--text-faint); }
+  
+    .footer-col-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 2rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--card-border);
+      margin-bottom: 1.5rem;
+      text-align: left;
+    }
+    .footer-col h4 {
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.8rem;
+      color: var(--text-main);
+    }
+    .footer-col ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.45rem;
+    }
+    .footer-col a {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color var(--transition);
+    }
+    .footer-col a:hover {
+      color: var(--accent-text);
+    }
+    .footer-brand-p {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-top: 0.5rem;
+    }
+    .footer-disclaimer {
+      font-size: 0.75rem;
+      color: var(--text-faint);
+    }
+    @media (max-width: 768px) {
+      .footer-col-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+    }
+
+  
+    /* FAQ Accordion Styling */
+    .faq-list {
+      margin-top: 1.25rem;
+      margin-bottom: 2rem;
+    }
+    .faq-item {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-sm);
+      margin-bottom: 0.65rem;
+      overflow: hidden;
+      transition: border-color var(--transition);
+    }
+    .faq-item:hover {
+      border-color: var(--card-hover-border);
+    }
+    .faq-q {
+      width: 100%;
+      padding: 0.95rem 1.15rem;
+      background: none;
+      border: none;
+      color: var(--text-main);
+      font-size: 0.95rem;
+      font-weight: 600;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      text-align: left;
+      gap: 0.8rem;
+      font-family: inherit;
+    }
+    .faq-q:hover {
+      color: var(--accent-text);
+    }
+    .faq-q span:last-child {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--accent-text);
+      flex-shrink: 0;
+      line-height: 1;
+    }
+    .faq-a {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1), padding 0.35s ease;
+      padding: 0 1.15rem;
+    }
+    .faq-a.open {
+      max-height: 450px;
+      padding: 0 1.15rem 1.15rem;
+    }
+    .faq-a p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+      margin: 0;
+    }
+
+  
+    
+    /* ═══════════════════════════════════════════════════
+       MASTER UNIFIED DESIGN & MOBILE RESPONSIVE SYSTEM
+       100% Consistent Layout, Identical Header & Zero Overflow
+    ═══════════════════════════════════════════════════ */
+    html, body {
+      overflow-x: clip;
+      max-width: 100vw;
+    }
+
+    /* Master Site Navigation */
+    header.site-nav {
+      border-bottom: 1px solid var(--card-border);
+      background: var(--bg);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      transition: background-color var(--transition);
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 58px;
+      gap: 10px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      text-decoration: none;
+      color: var(--text-main);
+      min-width: 0;
+      flex-shrink: 1;
+    }
+    .brand-logo-img {
+      border-radius: 8px;
+      display: block;
+      flex-shrink: 0;
+      width: 30px;
+      height: 30px;
+    }
+    .brand-name {
+      font-size: 1.05rem;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .brand-accent {
+      color: var(--accent-text);
+    }
+    .brand-tld {
+      color: var(--text-faint);
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+    .nav-tools {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+    .nav-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      padding: 6px 12px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-sm);
+      background: var(--card-bg);
+      text-decoration: none;
+      cursor: pointer;
+      transition: all var(--transition);
+      white-space: nowrap;
+      height: 34px;
+      font-family: inherit;
+    }
+    .nav-btn:hover {
+      color: var(--text-main);
+      border-color: var(--card-border-hover);
+    }
+    .nav-btn.active {
+      color: var(--accent-text);
+      background: var(--accent-faint);
+      border-color: var(--accent);
+    }
+
+    /* Master Cluster Sub-Navigation */
+    .cluster-bar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 0;
+      overflow-x: auto;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      margin-bottom: 1.5rem;
+    }
+    .cluster-bar::-webkit-scrollbar {
+      display: none;
+    }
+    .cluster-link {
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 6px 13px;
+      border-radius: var(--radius-pill);
+      border: 1px solid var(--card-border);
+      background: var(--card-bg);
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: all var(--transition);
+      flex-shrink: 0;
+    }
+    .cluster-link:hover {
+      color: var(--text-main);
+      border-color: var(--card-border-hover);
+    }
+    .cluster-link.active {
+      background: var(--accent);
+      color: #ffffff;
+      border-color: var(--accent);
+      box-shadow: 0 2px 8px rgba(99, 102, 241, 0.35);
+    }
+    [data-theme="light"] .cluster-link.active {
+      background: #003467;
+      border-color: #003467;
+      color: #ffffff;
+      box-shadow: 0 2px 8px rgba(0, 52, 103, 0.25);
+    }
+
+    /* Master Hero Section */
+    .hero {
+      text-align: center;
+      padding: 2.25rem 0 1.25rem;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: var(--radius-pill);
+      background: var(--accent-faint);
+      color: var(--accent-text);
+      margin-bottom: 0.85rem;
+      border: 1px solid rgba(99, 102, 241, 0.2);
+    }
+    [data-theme="light"] .hero-badge {
+      border-color: rgba(0, 52, 103, 0.15);
+    }
+    .badge-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #10b981;
+    }
+    .hero-title {
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.2;
+      margin-bottom: 0.6rem;
+      color: var(--text-main);
+    }
+    .hero-desc {
+      font-size: 0.98rem;
+      color: var(--text-muted);
+      max-width: 580px;
+      margin: 0 auto;
+      line-height: 1.55;
+    }
+
+    /* Master Workbench & Controls */
+    .workbench {
+      background: var(--bg-subtle);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-lg);
+      padding: 1.25rem;
+      margin-bottom: 1.75rem;
+      box-shadow: var(--shadow-card);
+    }
+    .input-field-wrap {
+      position: relative;
+      border: var(--dashed-border, 1.5px dashed rgba(99, 102, 241, 0.35));
+      border-radius: var(--radius-md);
+      background: var(--input-bg);
+      box-shadow: var(--glow-ring, 0 0 0 1px rgba(99, 102, 241, 0.15));
+      padding: 6px;
+      transition: border-color var(--transition), box-shadow var(--transition);
+      display: flex;
+      align-items: stretch;
+      gap: 8px;
+    }
+    .input-field-wrap:focus-within {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.25);
+    }
+    #main-input {
+      flex: 1;
+      width: 100%;
+      background: transparent;
+      border: none;
+      border-radius: var(--radius-sm);
+      padding: 10px 14px;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--text-main);
+      outline: none;
+      resize: none;
+      min-height: 75px;
+      line-height: 1.45;
+      font-family: inherit;
+    }
+    .input-inline-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      justify-content: flex-start;
+      padding: 4px;
+    }
+    .inline-action-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 6px 10px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--card-border);
+      background: var(--bg-subtle);
+      color: var(--text-muted);
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all var(--transition);
+      font-family: inherit;
+    }
+    .inline-action-btn:hover {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #ffffff;
+    }
+    .inline-action-btn.btn-danger-hover:hover {
+      background: #dc2626;
+      border-color: #dc2626;
+      color: #ffffff;
+    }
+
+    /* Master Workbench Bottom & Bio Meters */
+    .workbench-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 14px;
+      padding-top: 14px;
+      border-top: 1px solid var(--card-border);
+    }
+    .bio-meters {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .bio-meter-chip {
+      font-size: 0.75rem;
+      padding: 4px 9px;
+      border-radius: var(--radius-sm);
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-family: var(--font-mono, monospace);
+    }
+    .bio-meter-chip b {
+      color: var(--text-main);
+    }
+    .bio-meter-chip.overlimit {
+      border-color: #ef4444;
+      background: rgba(239, 68, 68, 0.1);
+      color: #ef4444;
+    }
+    .workbench-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .btn-action {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 7px 15px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      transition: all var(--transition);
+      font-family: inherit;
+    }
+    .btn-action-primary {
+      background: var(--accent);
+      color: #ffffff;
+      border: 1px solid var(--accent);
+    }
+    .btn-action-primary:hover {
+      background: var(--accent-hover);
+      border-color: var(--accent-hover);
+    }
+    .btn-action-ghost {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      color: var(--text-muted);
+    }
+    .btn-action-ghost:hover {
+      color: var(--text-main);
+      border-color: var(--card-border-hover);
+    }
+
+    /* Master Output Cards Grid */
+    .styles-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+      gap: 12px;
+      margin-bottom: 3rem;
+    }
+    .font-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-md);
+      padding: 1.1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 0.85rem;
+      position: relative;
+      overflow: hidden;
+      box-shadow: var(--shadow-card);
+      transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+    }
+    .font-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--card-top-stripe, linear-gradient(90deg, #6366f1, #a855f7));
+      opacity: 0.85;
+    }
+    .font-card:hover {
+      border-color: var(--card-border-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0, 52, 103, 0.12), 0 2px 6px rgba(0, 0, 0, 0.04);
+    }
+    .card-title {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--text-main);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .card-title::before {
+      content: '▸';
+      color: var(--accent-text);
+      font-size: 0.8rem;
+    }
+    .card-preview {
+      word-break: break-word;
+      overflow-wrap: anywhere;
+      font-size: 1.25rem;
+      line-height: 1.45;
+      font-weight: 600;
+      color: var(--fancy-color, var(--fancy-blue, #ffffff));
+      letter-spacing: 0.01em;
+    }
+    [data-theme="light"] .card-preview {
+      color: #0f172a;
+    }
+    .copy-btn {
+      touch-action: manipulation;
+      cursor: pointer;
+    }
+
+    /* Touch Ergonomics & Responsive Breakpoints */
+    @media (max-width: 640px) {
+      .hero { padding: 1.5rem 0 1rem; }
+      .hero-title { font-size: clamp(1.6rem, 6vw, 2.2rem); }
+      .workbench { padding: 0.95rem; }
+      .styles-grid { grid-template-columns: 1fr; }
+      .controls-strip { flex-direction: column; align-items: stretch; gap: 10px; }
+      .search-box { width: 100%; min-width: 0; }
+      .workbench-bottom { flex-direction: column; align-items: stretch; gap: 12px; }
+      .workbench-actions { width: 100%; display: flex; gap: 8px; }
+      .workbench-actions .btn-action { flex: 1; justify-content: center; text-align: center; padding: 9px 12px; }
+      .tools-nav-section { padding: 1.25rem 0.95rem; margin-top: 2rem; }
+      .tools-nav-header h2 { font-size: 1.25rem; }
+      .tools-nav-grid { grid-template-columns: 1fr; gap: 12px; }
+      .footer-col-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+    }
+
+    /* Mobile Header & Button Compact Mode */
+    @media (max-width: 580px) {
+      .nav-label {
+        display: none !important;
+      }
+      .nav-btn {
+        padding: 0 !important;
+        width: 36px !important;
+        height: 36px !important;
+        font-size: 0.95rem !important;
+        border-radius: 8px !important;
+      }
+      .brand-tld {
+        display: none !important;
+      }
+      .brand-name {
+        font-size: 0.95rem !important;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .input-field-wrap {
+        flex-direction: column;
+        padding: 8px;
+      }
+      #main-input {
+        font-size: 16px !important;
+        min-height: 80px;
+        padding: 6px 8px;
+      }
+      .input-inline-actions {
+        flex-direction: row;
+        width: 100%;
+        justify-content: flex-end;
+        gap: 8px;
+        padding-top: 6px;
+        border-top: 1px solid var(--card-border);
+      }
+      .inline-action-btn {
+        flex: 1;
+        padding: 8px 12px;
+        font-size: 0.8rem;
+        min-height: 38px;
+      }
+      .quick-presets, .transform-bar, .cat-nav {
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        padding-bottom: 4px;
+      }
+      .quick-presets::-webkit-scrollbar, .transform-bar::-webkit-scrollbar, .cat-nav::-webkit-scrollbar {
+        display: none;
+      }
+      .dec-custom-input-bar {
+        flex-wrap: wrap;
+      }
+      .dec-chips-grid {
+        grid-template-columns: repeat(auto-fill, minmax(105px, 1fr));
+      }
+    }
+
+    @media (max-width: 480px) {
+      .wrap {
+        padding: 0 0.85rem;
+      }
+      .font-card {
+        padding: 0.95rem;
+      }
+      .btn-load-more {
+        width: 100%;
+        justify-content: center;
+        padding: 13px 20px;
+        font-size: 0.92rem;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .brand-name {
+        font-size: 0.88rem !important;
+      }
+      .brand-logo-img {
+        width: 28px !important;
+        height: 28px !important;
+      }
+    }
+
+    @media (max-width: 360px) {
+      .wrap {
+        padding: 0 0.65rem;
+      }
+      .brand-name {
+        font-size: 0.82rem !important;
+      }
+    }
+
+  </style>
+
+  <!-- Open Graph / Social SEO -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact Us — Fancy Text Font Generator Support">
+  <meta property="og:description" content="Get in touch with the FancyTextFontGenerator.com team for font requests, feedback, and support.">
+  <meta property="og:url" content="https://fancytextfontgenerator.com/contact.html">
+  <meta property="og:site_name" content="FancyTextFontGenerator.com">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Contact Us | FancyTextFontGenerator.com">
+  <meta name="twitter:description" content="Get in touch with the FancyTextFontGenerator.com team for font suggestions, bug reports, or partnership inquiries.">
+  <meta property="og:image" content="https://fancytextfontgenerator.com/og-image.png">
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "name": "FancyTextFontGenerator.com",
+      "url": "https://fancytextfontgenerator.com/",
+      "logo": "https://fancytextfontgenerator.com/favicon.svg"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://fancytextfontgenerator.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Contact Us",
+          "item": "https://fancytextfontgenerator.com/contact.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How can I contact the FancyTextFontGenerator.com team?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can submit an inquiry through our contact form above or email us directly at contact@fancytextfontgenerator.com. For technical bug reports, reach our team at support@fancytextfontgenerator.com."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is your typical support response time?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We review messages daily and typically respond within 24 to 48 business hours, Monday through Friday."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I report a missing font or character rendering issue?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Select \"Report a Bug / Rendering Issue\" in the contact form, specify the font style affected, and include your device model (e.g. iPhone 13, Samsung Galaxy S22) and browser version."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I submit new symbol combinations or kaomoji faces?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! Select \"Font or Symbol Suggestion\" in the subject dropdown and paste your suggested symbol set. Our team will review and integrate popular requests into our generator catalog."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I contact you regarding commercial partnerships or API access?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Choose \"Commercial / Licensing Question\" or email partnerships@fancytextfontgenerator.com with details about your integration or collaboration proposal."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is customer support free for all users?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Support is 100% free. We are committed to helping creators, bio designers, and gamers resolve any formatting challenges."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where can I find licensing and trademark disclosures?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can review our full legal disclosures, intellectual property rights, and platform terms on our Terms of Service and Disclaimer pages."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+
+  <header class="site-nav" role="banner">
+    <div class="wrap nav-inner">
+      <a href="index.html" class="brand" aria-label="FancyTextFontGenerator.com Homepage">
+        <img src="favicon.svg" width="30" height="30" alt="Logo" class="brand-logo-img">
+        <span class="brand-name">FancyText<span class="brand-accent">FontGenerator</span><small class="brand-tld">.com</small></span>
+      </a>
+      <div class="nav-tools">
+        <a href="index.html" class="nav-btn" title="Back to Font Generator" aria-label="Back to Font Generator">
+          <span class="nav-icon">⚡</span><span class="nav-label"> All Fonts</span>
+        </a>
+        <button id="themeToggleBtn" class="nav-btn" title="Toggle dark/light theme" aria-label="Toggle theme">
+          <span id="themeIcon">☀️</span><span class="nav-label"> Theme</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <nav class="cluster-bar" aria-label="Explore Specific Font Generators">
+      <a href="index.html" class="cluster-link">⚡ All 200+ Styles</a>
+      <a href="cursive-text-generator.html" class="cluster-link">✒️ Cursive Generator</a>
+      <a href="bold-text-generator.html" class="cluster-link">𝐁 Bold Generator</a>
+      <a href="stylish-name-maker.html" class="cluster-link">🎮 Stylish Name Maker</a>
+      <a href="instagram-fonts.html" class="cluster-link">📱 Instagram Fonts</a>
+      <a href="discord-fonts.html" class="cluster-link">💬 Discord Fonts</a>
+      <a href="fancy-letters.html" class="cluster-link">✦ Fancy Letters</a>
+    </nav>
+  </div>
+
+  <main class="wrap content-area" role="main">
+    <div class="page-head">
+      <span class="badge">Support &amp; Feedback</span>
+      <h1>Contact Us</h1>
+      <p class="subtext">Have a question, font suggestion, or bug report? We'd love to hear from you.</p>
+    </div>
+
+    <div class="contact-layout">
+      <!-- Contact Form -->
+      <div class="form-box">
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="contactName">Your Name</label>
+            <input type="text" id="contactName" class="form-control" placeholder="Jane Doe" required>
+          </div>
+
+          <div class="form-group">
+            <label for="contactEmail">Email Address</label>
+            <input type="email" id="contactEmail" class="form-control" placeholder="you@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="contactSubject">Subject</label>
+            <select id="contactSubject" class="form-control">
+              <option value="Suggestion">Font or Symbol Suggestion</option>
+              <option value="Bug">Report a Bug / Rendering Issue</option>
+              <option value="Licensing">Commercial / Licensing Question</option>
+              <option value="General">General Inquiry</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="contactMessage">Message</label>
+            <textarea id="contactMessage" class="form-control" placeholder="Tell us how we can help..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit">Send Message</button>
+          <div id="formStatus"></div>
+        </form>
+      </div>
+
+      <!-- Info Sidebar -->
+      <div class="info-sidebar">
+        <h2>Direct Contact Channels</h2>
+        <p>
+          We read every message and typically respond within 24 to 48 business hours. If you are reporting a character rendering problem, please include your device model and browser version.
+        </p>
+
+        <div class="info-card">
+          <div class="info-card-title">General Inquiries</div>
+          <div class="info-card-value">contact@fancytextfontgenerator.com</div>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-title">Technical &amp; Bugs</div>
+          <div class="info-card-value">support@fancytextfontgenerator.com</div>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-title">Response Time</div>
+          <div style="font-size:0.9rem; color:var(--text-main); font-weight:600;">Within 24-48 Hours</div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Contact & Support FAQs -->
+    <section class="contact-faq-section" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--card-border);">
+      <h2 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 1.25rem;">Frequently Asked Questions</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q"><span>How can I contact the FancyTextFontGenerator.com team?</span><span>+</span></button>
+          <div class="faq-a"><p>You can submit an inquiry through our contact form above or email us directly at contact@fancytextfontgenerator.com. For technical bug reports, reach our team at support@fancytextfontgenerator.com.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q"><span>What is your typical support response time?</span><span>+</span></button>
+          <div class="faq-a"><p>We review messages daily and typically respond within 24 to 48 business hours, Monday through Friday.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q"><span>How do I report a missing font or character rendering issue?</span><span>+</span></button>
+          <div class="faq-a"><p>Select "Report a Bug / Rendering Issue" in the contact form, specify the font style affected, and include your device model (e.g. iPhone 13, Samsung Galaxy S22) and browser version.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q"><span>Can I submit new symbol combinations or kaomoji faces?</span><span>+</span></button>
+          <div class="faq-a"><p>Yes! Select "Font or Symbol Suggestion" in the subject dropdown and paste your suggested symbol set. Our team will review and integrate popular requests into our generator catalog.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q"><span>Can I contact you regarding commercial partnerships or API access?</span><span>+</span></button>
+          <div class="faq-a"><p>Yes. Choose "Commercial / Licensing Question" or email partnerships@fancytextfontgenerator.com with details about your integration or collaboration proposal.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q"><span>Is customer support free for all users?</span><span>+</span></button>
+          <div class="faq-a"><p>Yes. Support is 100% free. We are committed to helping creators, bio designers, and gamers resolve any formatting challenges.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q"><span>Where can I find licensing and trademark disclosures?</span><span>+</span></button>
+          <div class="faq-a"><p>You can review our full legal disclosures, intellectual property rights, and platform terms on our Terms of Service and Disclaimer pages.</p></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="wrap">
+      <div class="footer-col-grid">
+        <div class="footer-col">
+          <div class="brand" style="margin-bottom: 0.5rem;">
+            <img src="favicon.svg" width="28" height="28" alt="Logo" style="border-radius:6px;">
+            <span class="brand-name" style="font-size:0.95rem;">FancyText<span style="color:var(--accent-text);">FontGenerator</span><small style="color:var(--text-faint); font-size:0.75rem;">.com</small></span>
+          </div>
+          <p class="footer-brand-p">
+            Free, client-side Unicode font generator providing instant 1-click styling for Instagram, TikTok, Discord, and gaming nicknames. Zero tracking, zero data storage, 100% free forever.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Font Generators</h4>
+          <ul>
+            <li><a href="index.html">All Font Styles</a></li>
+            <li><a href="cursive-text-generator.html">Cursive Generator</a></li>
+            <li><a href="bold-text-generator.html">Bold Generator</a></li>
+            <li><a href="stylish-name-maker.html">Stylish Name Maker</a></li>
+            <li><a href="instagram-fonts.html">Instagram Fonts</a></li>
+            <li><a href="discord-fonts.html">Discord Fonts</a></li>
+            <li><a href="fancy-letters.html">Fancy Letters &amp; Symbols</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal &amp; Support</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+            <li><a href="sitemap.xml">XML Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-disclaimer">
+        © 2026 FancyTextFontGenerator.com · Built for creators, bio designers, and gamers worldwide.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    const themeBtn = document.getElementById('themeToggleBtn');
+    const themeIcon = document.getElementById('themeIcon');
+    function applyTheme(t) {
+      document.documentElement.setAttribute('data-theme', t);
+      themeIcon.textContent = t === 'dark' ? '🌙' : '☀️';
+      localStorage.setItem('ft_studio_theme', t);
+    }
+    const saved = localStorage.getItem('ft_studio_theme') || 'dark';
+    applyTheme(saved);
+    themeBtn.addEventListener('click', () => {
+      const cur = document.documentElement.getAttribute('data-theme') || 'dark';
+      applyTheme(cur === 'dark' ? 'light' : 'dark');
+    });
+
+    // Handle Contact Form Submit (Client-Side Feedback)
+    document.getElementById('contactForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const status = document.getElementById('formStatus');
+      status.className = 'success';
+      status.textContent = '✓ Thank you! Your message has been received. We will get back to you shortly.';
+      document.getElementById('contactForm').reset();
+    });
+  </script>
+
+  <script>
+    // FAQ Accordion Toggle
+    document.querySelectorAll('.faq-q').forEach(q => {
+      q.addEventListener('click', () => {
+        const a = q.nextElementSibling;
+        const isOpen = a.classList.contains('open');
+        document.querySelectorAll('.faq-a').forEach(x => x.classList.remove('open'));
+        document.querySelectorAll('.faq-q span:last-child').forEach(s => s.textContent = '+');
+        if (!isOpen) {
+          a.classList.add('open');
+          q.querySelector('span:last-child').textContent = '−';
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

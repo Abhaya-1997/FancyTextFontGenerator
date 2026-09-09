@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed" />
+      <stop offset="100%" stop-color="#4f46e5" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.3" />
+    </filter>
+  </defs>
+  
+  <!-- App Icon Background -->
+  <rect width="100" height="100" rx="22" fill="url(#g)" />
+  <rect width="96" height="96" x="2" y="2" rx="20" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
+  
+  <!-- Calligraphy F Glyph -->
+  <text x="50" y="68" font-family="'Times New Roman', serif" font-style="italic" font-weight="bold" font-size="64" fill="#ffffff" text-anchor="middle" filter="url(#shadow)">𝓕</text>
+  
+  <!-- Sparkle Accent Top Right -->
+  <path d="M 80 18 Q 80 26 88 26 Q 80 26 80 34 Q 80 26 72 26 Q 80 26 80 18 Z" fill="#fbbf24" />
+</svg>
