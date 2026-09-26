@@ -1,8 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 <head>
-  <meta name="google-site-verification" content="FyzHmffvVfvrPwsAUr5JOdUPFe4wn4XkFX8lYe6HeRM" />
   <meta charset="UTF-8">
+  <script>
+    (function(){
+      var t=localStorage.getItem('theme')||localStorage.getItem('ft_studio_theme')||'light';
+      document.documentElement.setAttribute('data-theme',t);
+    })();
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fancy Text Font Generator ➜ 200+ Cool Fonts (Copy & Paste)</title>
   <meta name="description" content="Free Fancy Text Generator. Convert plain text into 200+ Unicode fonts: cursive, bold, gothic, and cool symbols. Instant 1-click copy for bio and chat.">>
@@ -1767,7 +1772,7 @@
           <span id="soundIcon">🔊</span><span class="nav-label"> Sound</span>
         </button>
         <button id="themeToggleBtn" class="nav-btn" title="Toggle dark/light theme" aria-label="Toggle theme">
-          <span id="themeIcon">☀️</span><span class="nav-label"> Theme</span>
+          <span id="themeIcon">🌙</span><span class="nav-label"> Theme</span>
         </button>
       </div>
     </div>
@@ -2910,18 +2915,20 @@ const MAP_WINGDINGS = {
        THEME CONTROLLER
     ────────────────────────────────────────────────── */
     function setupTheme() {
-      const t = localStorage.getItem('ft_studio_theme') || 'dark';
+      const t = localStorage.getItem('theme') || localStorage.getItem('ft_studio_theme') || 'light';
       applyTheme(t);
     }
 
     function applyTheme(t) {
       document.documentElement.setAttribute('data-theme', t);
-      document.getElementById('themeIcon').textContent = t === 'dark' ? '🌙' : '☀️';
+      const icon = document.getElementById('themeIcon');
+      if (icon) icon.textContent = t === 'dark' ? '☀️' : '🌙';
+      localStorage.setItem('theme', t);
       localStorage.setItem('ft_studio_theme', t);
     }
 
     function toggleTheme() {
-      const cur = document.documentElement.getAttribute('data-theme') || 'dark';
+      const cur = document.documentElement.getAttribute('data-theme') || 'light';
       applyTheme(cur === 'dark' ? 'light' : 'dark');
     }
 

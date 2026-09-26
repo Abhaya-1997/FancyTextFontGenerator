@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 <head>
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -7,6 +7,12 @@
   <link rel="apple-touch-icon" href="favicon.svg">
 
   <meta charset="UTF-8">
+  <script>
+    (function(){
+      var t=localStorage.getItem('theme')||localStorage.getItem('ft_studio_theme')||'light';
+      document.documentElement.setAttribute('data-theme',t);
+    })();
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Disclaimer & Trademark Notice — Fancy Text Generator</title>
   <meta name="description" content="Official disclaimer and trademark disclosures for Fancy Text Generator regarding third-party platforms including Instagram, TikTok, Discord, and Twitter/X.">>
@@ -888,7 +894,7 @@
           <span class="nav-icon">⚡</span><span class="nav-label"> All Fonts</span>
         </a>
         <button id="themeToggleBtn" class="nav-btn" title="Toggle dark/light theme" aria-label="Toggle theme">
-          <span id="themeIcon">☀️</span><span class="nav-label"> Theme</span>
+          <span id="themeIcon">🌙</span><span class="nav-label"> Theme</span>
         </button>
       </div>
     </div>
@@ -1040,15 +1046,18 @@
     const themeIcon = document.getElementById('themeIcon');
     function applyTheme(t) {
       document.documentElement.setAttribute('data-theme', t);
-      themeIcon.textContent = t === 'dark' ? '🌙' : '☀️';
+      if (themeIcon) themeIcon.textContent = t === 'dark' ? '☀️' : '🌙';
+      localStorage.setItem('theme', t);
       localStorage.setItem('ft_studio_theme', t);
     }
-    const saved = localStorage.getItem('ft_studio_theme') || 'dark';
+    const saved = localStorage.getItem('theme') || localStorage.getItem('ft_studio_theme') || 'light';
     applyTheme(saved);
-    themeBtn.addEventListener('click', () => {
-      const cur = document.documentElement.getAttribute('data-theme') || 'dark';
-      applyTheme(cur === 'dark' ? 'light' : 'dark');
-    });
+    if (themeBtn) {
+      themeBtn.addEventListener('click', () => {
+        const cur = document.documentElement.getAttribute('data-theme') || 'light';
+        applyTheme(cur === 'dark' ? 'light' : 'dark');
+      });
+    }
   </script>
 
   <script>

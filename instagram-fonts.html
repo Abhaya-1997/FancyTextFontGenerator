@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 <head>
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -7,6 +7,12 @@
   <link rel="apple-touch-icon" href="favicon.svg">
 
   <meta charset="UTF-8">
+  <script>
+    (function(){
+      var t=localStorage.getItem('theme')||localStorage.getItem('ft_studio_theme')||'light';
+      document.documentElement.setAttribute('data-theme',t);
+    })();
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Instagram Fonts Generator — Copy & Paste IG Bio Fonts</title>
   <meta name="description" content="Free Instagram Fonts Generator. Create stylish fonts for your IG bio, captions, reels, and stories with live 150-char bio limit meter. 1-click copy.">>
@@ -1304,7 +1310,7 @@
           <span class="nav-icon">⚡</span><span class="nav-label"> 200+ Styles</span>
         </a>
         <button id="themeToggleBtn" class="nav-btn" title="Toggle dark/light theme" aria-label="Toggle theme">
-          <span id="themeIcon">☀️</span><span class="nav-label"> Theme</span>
+          <span id="themeIcon">🌙</span><span class="nav-label"> Theme</span>
         </button>
       </div>
     </div>
@@ -1950,14 +1956,17 @@
     const themeIcon = document.getElementById('themeIcon');
     function applyTheme(t) {
       document.documentElement.setAttribute('data-theme', t);
-      themeIcon.textContent = t === 'dark' ? '🌙' : '☀️';
+      if (themeIcon) themeIcon.textContent = t === 'dark' ? '☀️' : '🌙';
+      localStorage.setItem('theme', t);
       localStorage.setItem('ft_studio_theme', t);
     }
-    applyTheme(localStorage.getItem('ft_studio_theme') || 'dark');
-    themeBtn.addEventListener('click', () => {
-      const cur = document.documentElement.getAttribute('data-theme') || 'dark';
-      applyTheme(cur === 'dark' ? 'light' : 'dark');
-    });
+    applyTheme(localStorage.getItem('theme') || localStorage.getItem('ft_studio_theme') || 'light');
+    if (themeBtn) {
+      themeBtn.addEventListener('click', () => {
+        const cur = document.documentElement.getAttribute('data-theme') || 'light';
+        applyTheme(cur === 'dark' ? 'light' : 'dark');
+      });
+    }
 
     document.querySelectorAll('.faq-q').forEach(q => {
       q.addEventListener('click', () => {

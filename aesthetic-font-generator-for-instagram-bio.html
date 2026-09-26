@@ -1,7 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
+  <script>
+    (function(){
+      var t=localStorage.getItem('theme')||localStorage.getItem('ft_studio_theme')||'light';
+      document.documentElement.setAttribute('data-theme',t);
+    })();
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   <title>Aesthetic Instagram Bio Font Generator (150-Char Safe)</title>
   <meta name="description" content="Create aesthetic fonts for your Instagram bio with a live 150-char limit meter. 1-click copy, no login needed. Works on iOS and Android mobile.">
@@ -1395,7 +1401,7 @@
           <span class="nav-icon">⚡</span><span class="nav-label"> 200+ Styles</span>
         </a>
         <button id="themeToggleBtn" class="nav-btn" title="Toggle dark/light theme" aria-label="Toggle theme">
-          <span id="themeIcon">☀️</span><span class="nav-label"> Theme</span>
+          <span id="themeIcon">🌙</span><span class="nav-label"> Theme</span>
         </button>
       </div>
     </div>
@@ -1941,17 +1947,19 @@
       setTimeout(() => toast.classList.remove('show'), 2000);
     }
 
+    function applyTheme(t) {
+      document.documentElement.setAttribute('data-theme', t);
+      if (themeIcon) themeIcon.textContent = t === 'dark' ? '☀️' : '🌙';
+      localStorage.setItem('theme', t);
+      localStorage.setItem('ft_studio_theme', t);
+    }
     if (themeBtn) {
       themeBtn.addEventListener('click', () => {
-        const current = document.documentElement.getAttribute('data-theme') || 'dark';
-        const next = current === 'dark' ? 'light' : 'dark';
-        document.documentElement.setAttribute('data-theme', next);
-        localStorage.setItem('theme', next);
-        if (themeIcon) themeIcon.textContent = next === 'dark' ? '☀️' : '🌙';
+        const current = document.documentElement.getAttribute('data-theme') || 'light';
+        applyTheme(current === 'dark' ? 'light' : 'dark');
       });
-      const saved = localStorage.getItem('theme') || 'dark';
-      document.documentElement.setAttribute('data-theme', saved);
-      if (themeIcon) themeIcon.textContent = saved === 'dark' ? '☀️' : '🌙';
+      const saved = localStorage.getItem('theme') || localStorage.getItem('ft_studio_theme') || 'light';
+      applyTheme(saved);
     }
 
     // Accordion Logic

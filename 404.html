@@ -1,7 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
+  <script>
+    (function(){
+      var t=localStorage.getItem('theme')||localStorage.getItem('ft_studio_theme')||'light';
+      document.documentElement.setAttribute('data-theme',t);
+    })();
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Page Not Found — Fancy Text Font Generator</title>
   <meta name="description" content="The page you're looking for doesn't exist. Return to FancyTextFontGenerator.com and explore 200+ fancy text styles for Instagram, Discord, TikTok, and gaming.">
@@ -64,7 +70,7 @@
       <a href="/discord-fonts.html" class="nav-link">&#128172; <span class="nav-label">Discord</span></a>
       <a href="/fancy-letters.html" class="nav-link">&#128290; <span class="nav-label">Letters</span></a>
     </nav>
-    <button class="theme-btn" aria-label="Toggle theme" onclick="toggleTheme()">&#9728;&#65039;</button>
+    <button class="theme-btn" aria-label="Toggle theme" onclick="toggleTheme()">🌙</button>
   </div>
 </header>
 
@@ -110,15 +116,18 @@
 function toggleTheme() {
   const html = document.documentElement;
   const isDark = html.getAttribute('data-theme') === 'dark';
-  html.setAttribute('data-theme', isDark ? 'light' : 'dark');
-  document.querySelector('.theme-btn').textContent = isDark ? '\u{1F319}' : '\u2600\uFE0F';
-  localStorage.setItem('theme', isDark ? 'light' : 'dark');
+  const next = isDark ? 'light' : 'dark';
+  html.setAttribute('data-theme', next);
+  const btn = document.querySelector('.theme-btn');
+  if (btn) btn.textContent = next === 'dark' ? '☀️' : '🌙';
+  localStorage.setItem('theme', next);
+  localStorage.setItem('ft_studio_theme', next);
 }
 (function() {
-  const saved = localStorage.getItem('theme') || 'dark';
+  const saved = localStorage.getItem('theme') || localStorage.getItem('ft_studio_theme') || 'light';
   document.documentElement.setAttribute('data-theme', saved);
   const btn = document.querySelector('.theme-btn');
-  if (btn) btn.textContent = saved === 'dark' ? '\u2600\uFE0F' : '\u{1F319}';
+  if (btn) btn.textContent = saved === 'dark' ? '☀️' : '🌙';
 })();
 </script>
 </body>
